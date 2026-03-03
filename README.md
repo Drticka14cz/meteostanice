@@ -1,6 +1,6 @@
-#Projekt MeteostanicA - doprovodný web
+# Projekt MeteostanicA - doprovodný web
 --------------------------------------
-##Web k meteostanici bude obsahovat několik funkcí:
+## Web k meteostanici bude obsahovat několik funkcí:
   - návod k použití meteostanice, vysvětlení schématu
   - popis projektu
   - bonus: 
@@ -8,7 +8,7 @@
     - interaktivní virtuální meteostanice (využití funkcí svelte)
 
 
-##Návod k stažení  a spuštění:
+## Návod k stažení  a spuštění:
   - stáhněte si tento repoitář do svého pc, buď ručně a nebo za využití gitu ve vašem vs codu (git init, git branch -m master main, git remote add origin <odkaz-na-tento-github>, git pull origin main)
   - po stáhnutí repozitáře napiště do terminálu následující příkazy(příkazy piště do místění repozitáře př.: c/user/meteostanice):
   
@@ -20,8 +20,8 @@
 
 
 
-Originální readme z dokumentace svelte:
------------------------------------------
+### Originální readme z dokumentace svelte:
+
 
 # sv
 
