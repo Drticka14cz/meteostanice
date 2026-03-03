@@ -9,11 +9,12 @@ Web k meteostanici bude obsahovat několik funkcí:
 
 
   Návod k stažení  a spuštění:
-    #stáhněte si tento repoitář do svého pc, buď ručně a nebo za využití gitu ve vašem vs codu (git init, git branch -m master main, git remote add origin <odkaz-na-tento-github>, git pull origin main)
-    #po stáhnutí repozitáře napiště do terminálu následující příkazy(příkazy piště do místění repozitáře př.: c/user/meteostanice):
+    1)stáhněte si tento repoitář do svého pc, buď ručně a nebo za využití gitu ve vašem vs codu (git init, git branch -m master main, git remote add origin <odkaz-na-tento-github>, git pull origin main)
+    2)po stáhnutí repozitáře napiště do terminálu následující příkazy(příkazy piště do místění repozitáře př.: c/user/meteostanice):
       -npm install (instalace npm - soubory důležité ke spuštění svelte projektu)
       -npm run dev -- --open  (zapnutí projektu - rovnou by mělo otevřít prohlížeč na portu kde je spuštěn svelte soubor. Pokud se to nespustí, v terminálu bude napsáno na jakém portu se to spustilo - pak jen do     prohlížeče napiště lockalhost:<číslo_portu>)
-      -užívejete web :D
+      
+    3)užívejete web :D
 
 
 
