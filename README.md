@@ -13,7 +13,7 @@
   - po stáhnutí repozitáře napiště do terminálu následující příkazy(příkazy piště do místění repozitáře př.: c/user/meteostanice):
   
     - npm install (instalace npm - soubory důležité ke spuštění svelte projektu)
-    - npm run dev -- --open  (zapnutí projektu - rovnou by mělo otevřít prohlížeč na portu kde je spuštěn svelte soubor. Pokud se to nespustí, v terminálu bude napsáno na jakém portu se to spustilo - pak jen do     prohlížeče napiště lockalhost:<číslo_portu>)
+    - npm run dev -- --open  (zapnutí projektu - rovnou by mělo otevřít prohlížeč na portu kde je spuštěn svelte soubor. Pokud se to nespustí, v terminálu bude napsáno na jakém portu se to spustilo - pak jen do prohlížeče napiště lockalhost:<číslo_portu>)
       
   - užívejete web :D
 
@@ -67,3 +67,6 @@ You can preview the production build with `npm run preview`.
 > To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
 >
 > fico
+
+
+vercel, netlify, cloudflare pages - možnost hostingu? doporučení od císaře
