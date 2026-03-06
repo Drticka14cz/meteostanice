@@ -15,7 +15,9 @@
 
 	<div id="stranka">{@render children()}</div>
 	<div id="patka">
-	<div id="patka_1"><a id="nadpis_patky">projekt Meteostanice</a></div>
+	<div id="patka_1"><a id="nadpis_patky">projekt Meteostanice</a><div id="patka_odkazy_web"><div class="patka_odkaz_web_divy">Domů</div>
+	<div class="patka_odkaz_web_divy">Návody</div>
+	<div class="patka_odkaz_web_divy">Dokumenty</div></div></div>
 	<div id="patka_2"><div id="patka_text" class="patka_div">
 			<ul>
 				<li class="bez_odrazky hlavni_sekce "><span class="podtrhnuto">Autoři:</span> <ul><li class="bez_odrazky">Jakub Štěpánek</li>
@@ -104,8 +106,10 @@
 	}
 	.bez_odrazky{
 		list-style-type: none;
-		font-size: 0.9rem;
+		font-size: 1rem;
 		padding-left: 1rem;
+		padding-bottom: 0.6rem;
+		padding-top: 0.5rem;
 	}
 	.podtrhnuto{
 		text-decoration: underline;
@@ -138,6 +142,27 @@
 	}
 	#nadpis_patky{
 		font-family: var(--font-mono);
-		font-size: 1.6 rem;
+		font-size: 1.6rem;
 	}
+	#patka_odkazy_web{
+		/* border-bottom: #f9b233 solid 1px; */
+		min-height: 3rem;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		align-items: end;
+		
+	}
+	.patka_odkaz_web_divy{
+		display: flex;
+		width: 10rem;
+		height: auto;
+		/* border: aqua 2px dashed; */
+		/* align-items: end; */
+		justify-content: center;
+	}
+	#patka_1{
+		margin-bottom: 2rem;
+	}
+
 </style>
