@@ -124,4 +124,3 @@
 		max-width: 25rem;
 	}
 </style>
-
