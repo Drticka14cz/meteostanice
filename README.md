@@ -9,7 +9,7 @@
 
 
 ## Návod k stažení  a spuštění:
-  - stáhněte si tento repoitář do svého pc, buď ručně a nebo za využití gitu ve vašem vs codu (git init, git branch -m master main, git remote add origin <odkaz-na-tento-github>, git pull origin main)
+  - stáhněte si tento repoitář do svého pc, buď ručně a nebo za využití gitu ve vašem vs codu (git init, git branch -m master main, git remote add origin <odkaz-na-tento-github>, git pull origin main). Dále je potřeba mít nainstalovaný node.js
   - po stáhnutí repozitáře napiště do terminálu následující příkazy(příkazy piště do místění repozitáře př.: c/user/meteostanice):
   
     - npm install (instalace npm - soubory důležité ke spuštění svelte projektu)
