@@ -37,7 +37,15 @@
 		</div>
 		<div id="patka_logo" class="patka_div"><img src="trebesin_logo.png" alt="Logo Třebešín" id="logo_trebesin"></div>
 </div>
-	<div id="patka_3">2026</div>
+	<div id="patka_3"><div class="patka_3" id="patka_3_loga">
+	<div class="div_socky_basic">skolni IG</div>
+	<div class="div_socky_basic">Facebook</div>
+	<div class="div_socky_basic">youtube</div>
+	<div class="div_socky_basic">linkedin</div>
+	<div class="div_socky_basic">osobni kuba</div>
+<div class="div_socky_basic">osobni tom</div></div>
+	
+	<div class="patka_3" id="div_2026">2026</div></div>
 		
 	</div>
 
@@ -133,6 +141,24 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: flex-end;
+		border: red 1px dashed;
+		min-height: 5rem;
+		gap: 1rem;
+	}
+	#patka_3_loga{
+		border: blue 1px solid;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+	}
+	#div_2026{
+		border: yellow 1px solid;
+	}
+	.div_socky_basic{
+		min-height: 1rem;
+		min-width: 2rem;
+		border: red solid 1px;
+		/* IG, Facebook, youtube, linkein, IG osobni * 2 */
 	}
 	#patka_2{
 		display: flex;
