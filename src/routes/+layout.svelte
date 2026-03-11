@@ -12,12 +12,12 @@
 
 <main>
 <div id="telo">
-
+	
 	<div id="stranka">{@render children()}</div>
 	<div id="patka">
-	<div id="patka_1"><a id="nadpis_patky">projekt Meteostanice</a><div id="patka_odkazy_web"><div class="patka_odkaz_web_divy">Domů</div>
-	<div class="patka_odkaz_web_divy">Návody</div>
-	<div class="patka_odkaz_web_divy">Dokumenty</div></div></div>
+	<div id="patka_1"><a id="nadpis_patky">projekt Meteostanice</a><div id="patka_odkazy_web"><div class="patka_odkaz_web_divy"><a href="/" class="patka_odkaz_web_divy_a">Domů</a></div>
+	<div class="patka_odkaz_web_divy"><a href="/navody" class="patka_odkaz_web_divy_a">Návody</a></div>
+	<div class="patka_odkaz_web_divy"><a href="/dokumenty" class="patka_odkaz_web_divy_a">Dokumenty</a></div></div></div>
 	<div id="patka_2"><div id="patka_text" class="patka_div">
 			<ul>
 				<li class="bez_odrazky hlavni_sekce "><span class="podtrhnuto">Autoři:</span> <ul><li class="bez_odrazky">Jakub Štěpánek</li>
@@ -35,15 +35,19 @@
 			</ul>
 			
 		</div>
-		<div id="patka_logo" class="patka_div"><img src="trebesin_logo.png" alt="Logo Třebešín" id="logo_trebesin"></div>
+		<div id="patka_logo" class="patka_div"><div class="patka_loga_L"><a href="/"><img src="logo_meteostanice.png" alt="Logo meteostanice" id="logo_meteostanice"></a><a href="https://www.trebesin.cz"target="_blank"><img src="trebesin_logo.png" alt="Logo Třebešín" id="logo_trebesin"></a></div><div class="patka_loga_R"><img src="kapka.png" alt="kapka" class="patka_loga_R_paranetry"><img src="mesic.png" alt="mesic" class="patka_loga_R_paranetry"><img src="slunce.png" alt="slunce" class="patka_loga_R_paranetry"><img src="vlocka.png" alt="vlocka" class="patka_loga_R_paranetry"></div></div>
 </div>
 	<div id="patka_3"><div class="patka_3" id="patka_3_loga">
-	<div class="div_socky_basic">skolni IG</div>
-	<div class="div_socky_basic">Facebook</div>
-	<div class="div_socky_basic">youtube</div>
-	<div class="div_socky_basic">linkedin</div>
-	<div class="div_socky_basic">osobni kuba</div>
-<div class="div_socky_basic">osobni tom</div></div>
+	<div class="div_socky_basic"><a class="socky_img_a" href="https://www.instagram.com/prumyslovka_trebesin/" target="_blank"><img src="instagram.svg" alt="Školní instagram" class="socky_img">Školní instagram</a></div>
+	<div class="div_socky_basic"><a href="https://www.facebook.com/trebesin/?locale=cs_CZ" class="socky_img_a"target="_blank"><img src="facebook.svg" alt="Školní facebook" class="socky_img">školní facebook</a></div>
+	<div class="div_socky_basic"><a href="https://www.youtube.com/channel/UCeA7SCP5XHAwDmbk42RdJPg" class="socky_img_a"target="_blank"><img src="youtube.svg" alt="školní youtube" class="socky_img">školnou youtube</a></div>
+	<div class="div_socky_basic"><a href="https://svelte.dev/tutorial/kit/introducing-sveltekit" class="socky_img_a"target="_blank"><img src="linkedin.svg" alt="Školní linkedin" class="socky_img">školní linkedin</a></div>
+	<div class="div_socky_basic"><a href="https://www.instagram.com/jakub_stepanek_14/" class="socky_img_a"target="_blank"><img src="instagram.svg" alt="Kubův instagram" class="socky_img">Štěpánek instagram</a></div>
+	<div class="div_socky_basic"><a href="https://svelte.dev/tutorial/kit/introducing-sveltekit" class="socky_img_a"target="_blank"><img src="linkedin.svg" alt="Kubův linkedin" class="socky_img">Štěpánek linkedin</a></div>
+<div class="div_socky_basic"><a href="https://www.instagram.com/tomas_tarabek/" class="socky_img_a"target="_blank"><img src="instagram.svg" alt="Tomův IG" class="socky_img">Tarábek instagram</a> </div>
+<div class="div_socky_basic"><a href="https://svelte.dev/tutorial/kit/introducing-sveltekit" class="socky_img_a"target="_blank"><img src="linkedin.svg" alt="Tomův linkedin" class="socky_img">Tarábek linkedin</a></div>
+</div>
+
 	
 	<div class="patka_3" id="div_2026">2026</div></div>
 		
@@ -104,10 +108,55 @@
 	#patka_logo{
 		/* border: 1px black solid; */
 		display: flex;
+		
+		justify-content: space-between;
+		margin-left: 10rem;
+
+
+	}
+	#logo_trebesin{
+		max-width: 20rem;
+		transition: transform 2s ease;
+	}
+	#logo_trebesin:hover{
+		transform: scale(1.2);
+	}
+	#logo_meteostanice{
+		
+		max-width: 20rem;
+		transition: transform 2s ease;
+
+	}
+	#logo_meteostanice:hover{
+		transform: scale(1.2);
+
+	}
+	.patka_loga_L{
+		/* border: red dashed 2px; */
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		
+		
+		align-content: center;
+	}
+	.patka_loga_R{
+		/* border: blue dashed 2px; */
+		min-width: 10rem;
+		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		padding-left: 10rem;
+		align-items: end;
+		align-content: center;
+		gap: 5em;
+		padding: 1rem;
 
+	}
+	.patka_loga_R_paranetry{
+		max-height: 3rem;
+		object-fit: contain;
+		
+		
 	}
 	.patka_div{
 		width:100% ;
@@ -141,31 +190,62 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: flex-end;
-		border: red 1px dashed;
+		/* border: red 1px dashed; */
 		min-height: 5rem;
-		gap: 1rem;
+		gap: 2rem;
+		margin-top: 5rem;
 	}
 	#patka_3_loga{
-		border: blue 1px solid;
+		/* border: blue 1px solid; */
 		display: flex;
 		flex-direction: row;
 		justify-content: space-evenly;
 	}
 	#div_2026{
-		border: yellow 1px solid;
+		/* border: yellow 1px solid; */
+		min-height: 2rem;
 	}
 	.div_socky_basic{
 		min-height: 1rem;
 		min-width: 2rem;
-		border: red solid 1px;
+		max-height: 5rem;
+		max-width: 5rem;
+		/* border: red solid 1px; */
 		/* IG, Facebook, youtube, linkein, IG osobni * 2 */
+		/* div ve kterem jsou loga */
+	}
+	.socky_img{
+		height: 3rem;
+		aspect-ratio: 1;
+/* pouze loga socek */
+	}
+	.socky_img_a{ 
+/* pouze element a - tvorba odkazu a pak asi i animace */
+		aspect-ratio: 1;
+		color: inherit;
+		text-decoration: none;
+		font-size: 0.6rem;
+		display: flex;
+		flex-direction: column;
+	}
+	.socky_img_a:hover{
+		cursor: pointer;
+	}
+	.socky_img_a img{
+		transition: transform 0.5s ease;
+		
+
+	}
+	.socky_img_a img:hover{
+		transform: translateY(-0.5rem) rotate(5deg);
+	
+		
+		filter: brightness(1.1);
 	}
 	#patka_2{
 		display: flex;
 	}
-	#logo_trebesin{
-		max-width: 25rem;
-	}
+	
 	#nadpis_patky{
 		font-family: var(--font-mono);
 		font-size: 1.6rem;
@@ -186,6 +266,17 @@
 		/* border: aqua 2px dashed; */
 		/* align-items: end; */
 		justify-content: center;
+		
+		
+	}
+	.patka_odkaz_web_divy_a{
+		text-decoration: none;
+		color: inherit;
+		transition: transform 1s ease;
+	}
+	.patka_odkaz_web_divy_a:hover{
+		transform: scale(1.2) rotate(5deg) translateY(-0.1rem);
+
 	}
 	#patka_1{
 		margin-bottom: 2rem;
