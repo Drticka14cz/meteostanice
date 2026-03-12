@@ -1,13 +1,33 @@
-<h1>Meteostanica</h1>
-<p>Lorem <a href="/navody">ipsum</a> dolor sit amet, consectetur adipisicing elit. Hic eligendi ut a rerum tempora aut harum et maiores, voluptatem quisquam, consectetur ipsum eos cumque ab sed, illo omnis quas minima.</p>
-<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. A, iusto eligendi ullam praesentium rerum distinctio tempora eveniet iure quaerat repudiandae. Dolore qui magni hic vel. Illum placeat sint dolores eveniet!</p>
-<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. A, iusto eligendi ullam praesentium rerum distinctio tempora eveniet iure quaerat repudiandae. Dolore qui magni hic vel. Illum placeat sint dolores eveniet!</p>
-<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. A, iusto eligendi ullam praesentium rerum distinctio tempora eveniet iure quaerat repudiandae. Dolore qui magni hic vel. Illum placeat sint dolores eveniet!</p>
-<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. A, iusto eligendi ullam praesentium rerum distinctio tempora eveniet iure quaerat repudiandae. Dolore qui magni hic vel. Illum placeat sint dolores eveniet!</p>
-<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. A, iusto eligendi ullam praesentium rerum distinctio tempora eveniet iure quaerat repudiandae. Dolore qui magni hic vel. Illum placeat sint dolores eveniet!</p>
-
+<div class="main">
+    <div class="uvod"><div class="uvod_logo"><img src="logo_meteostanice.png" alt="logo meoteostanice" id="logo_meteostanice"></div></div>
+    <div class="mid">Pica</div>
+</div>
 <style>
-    h1{
-        color:red;
+    .uvod{
+        background-image:url("meteo_pozadi.png");
+        background-size: cover;
+        background-repeat: repeat;
+        background-position: center;
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        animation: mraky_repeat infinite timing-function delay iteration-count direction fill-mode;
     }
+    .uvod_logo{
+        height: 40vh;
+        width: 40vw;
+        border: red dashed 2px;
+
+    }
+    #logo_meteostanice{
+        height: 40vh;
+      
+    }
+    .mid{
+        min-height: 100vh;
+    }
+
 </style>

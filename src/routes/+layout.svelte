@@ -15,23 +15,17 @@
 	
 	<div id="stranka">{@render children()}</div>
 	<div id="patka">
-	<div id="patka_1"><a id="nadpis_patky">projekt Meteostanice</a><div id="patka_odkazy_web"><div class="patka_odkaz_web_divy"><a href="/" class="patka_odkaz_web_divy_a">Domů</a></div>
-	<div class="patka_odkaz_web_divy"><a href="/navody" class="patka_odkaz_web_divy_a">Návody</a></div>
-	<div class="patka_odkaz_web_divy"><a href="/dokumenty" class="patka_odkaz_web_divy_a">Dokumenty</a></div></div></div>
+	<div id="patka_1"><a id="nadpis_patky">PROJEKT METEOSTANICE</a><div id="patka_odkazy_web"><div class="patka_odkaz_web_divy"><a href="/" class="patka_odkaz_web_divy_a">DOMŮ</a></div>
+	<div class="patka_odkaz_web_divy"><a href="/navody" class="patka_odkaz_web_divy_a">NÁVODY</a></div>
+	<div class="patka_odkaz_web_divy"><a href="/dokumenty" class="patka_odkaz_web_divy_a">DOKUMENTY</a></div></div></div>
 	<div id="patka_2"><div id="patka_text" class="patka_div">
 			<ul>
-				<li class="bez_odrazky hlavni_sekce "><span class="podtrhnuto">Autoři:</span> <ul><li class="bez_odrazky">Jakub Štěpánek</li>
-				<li class="bez_odrazky">Tomáš Tarábek</li></ul></li>
-				<li class="bez_odrazky hlavni_sekce"><span class="podtrhnuto">Vedoucí práce:</span> <ul>
-					<li class="bez_odrazky">Ing. Lukáš Jacečko</li>
+				<li class="bez_odrazky hlavni_sekce "><span class="podtrhnuto">AUTOŘI:</span> <ul><li class="bez_odrazky">Jakub Štěpánek: stepanek123@trebesin.cz</li>
+				<li class="bez_odrazky">Tomáš Tarábek: tarabek123@trebesin.cz</li></ul></li>
+				<li class="bez_odrazky hlavni_sekce"><span class="podtrhnuto">VEDOUCÍ PRÁCE:</span> <ul>
+					<li class="bez_odrazky">Ing. Lukáš Jacečko: jacecko@trebesin.cz</li>
 				</ul></li>
-				<li class="bez_odrazky hlavni_sekce"> <span class="podtrhnuto">Kontakty</span>
-					<ul>
-						<li class="bez_odrazky">Jakub Štěpánek: stepanek123@trebesin.cz</li>
-						<li class="bez_odrazky">Tomáš Tarábek: tarabek123@trebesin.cz</li>
-						<li class="bez_odrazky">Ing. Lukáš Jacečko: jacecko@trebesin.cz</li>
-					</ul>
-				</li>
+				
 			</ul>
 			
 		</div>
@@ -99,7 +93,8 @@
 	#patka_text{
 		
 		/* border: 1px black solid; */
-		padding-left: 7%;
+		padding-top: 2%;
+		padding-left: 10%;
 		color: black;
 		font-family: var(--font-base);
 		font-size: medium;
@@ -111,6 +106,7 @@
 		
 		justify-content: space-between;
 		margin-left: 10rem;
+		margin-bottom: 0;
 
 
 	}
@@ -136,13 +132,13 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: space-around;
-		
+		padding-left: 20%;
 		
 		align-content: center;
 	}
 	.patka_loga_R{
 		/* border: blue dashed 2px; */
-		min-width: 10rem;
+		min-width: 5rem;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -151,9 +147,10 @@
 		gap: 5em;
 		padding: 1rem;
 
+
 	}
 	.patka_loga_R_paranetry{
-		max-height: 3rem;
+		max-height: 2.2rem;
 		object-fit: contain;
 		
 		
@@ -166,11 +163,13 @@
 		font-size: 1rem;
 		padding-left: 1rem;
 		padding-bottom: 0.6rem;
-		padding-top: 0.5rem;
+		padding-top: 0.8rem;
 	}
 	.podtrhnuto{
 		text-decoration: underline;
 		font-size: 1.2rem;
+		font-weight: 500;
+		
 		
 	}
 	.hlavni_sekce{
@@ -190,10 +189,12 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: flex-end;
-		/* border: red 1px dashed; */
+		border-top: black 1px solid;
 		min-height: 5rem;
 		gap: 2rem;
-		margin-top: 5rem;
+		margin-top: 1rem;
+		margin-right:5rem ;
+		margin-left:5rem ;
 	}
 	#patka_3_loga{
 		/* border: blue 1px solid; */
@@ -210,6 +211,7 @@
 		min-width: 2rem;
 		max-height: 5rem;
 		max-width: 5rem;
+		
 		/* border: red solid 1px; */
 		/* IG, Facebook, youtube, linkein, IG osobni * 2 */
 		/* div ve kterem jsou loga */
@@ -248,10 +250,15 @@
 	
 	#nadpis_patky{
 		font-family: var(--font-mono);
-		font-size: 1.6rem;
+		font-size: 2rem;
+		font-weight: 500;
 	}
 	#patka_odkazy_web{
-		/* border-bottom: #f9b233 solid 1px; */
+		padding-bottom: 1rem;
+		margin-left: 5rem;
+		margin-right: 5rem;
+		margin-top: 1rem;
+		border-bottom: black solid 1px;
 		min-height: 3rem;
 		display: flex;
 		flex-direction: row;
@@ -272,10 +279,12 @@
 	.patka_odkaz_web_divy_a{
 		text-decoration: none;
 		color: inherit;
+		font-weight: 500;
 		transition: transform 1s ease;
+		transform: scale(1.15);
 	}
 	.patka_odkaz_web_divy_a:hover{
-		transform: scale(1.2) rotate(5deg) translateY(-0.1rem);
+		transform: scale(1.5) rotate(5deg) translateY(-0.1rem);
 
 	}
 	#patka_1{
