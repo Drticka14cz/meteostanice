@@ -40,6 +40,36 @@
         /* border: red dashed 2px; */
 
     }
+    .uvod_logo img{
+        transition: transform 1s linear;
+        display: inline-block;
+    }
+    .uvod_logo img:hover{
+        transform: scale(1.2) translateX(1rem) translateY(1rem) rotate(-3deg);
+        animation: logo_mrak infinite 10s ease alternate;
+    }
+    @keyframes logo_mrak{
+        0%{
+            transform: translateX(0vw) translateY(0vh) rotate(0deg);
+            
+        }
+        25%{
+            transform: translateX(1vw) translateY(-0.5vh) rotate(4deg);
+            
+        }
+        50%{
+            transform: translateX(-0.5vw) translateY(2vh) rotate(0deg) scale(1.1);
+            
+        }
+        75%{
+            transform: translateX(-1vw) translateY(-0.5vh) rotate(-3deg)scale(0.9);
+            
+        }
+        100%{
+             transform: translateX(0vw) translateY(0vh) rotate(2deg) ;
+
+        }
+    }
     #logo_meteostanice{
         height: 40vh;
       
@@ -53,7 +83,7 @@
         height: 8vh;
     }
     .logo_nav:hover{
-        transform: scale(1.1) rotate(-5deg) translateY(0.2rem);
+        transform: scale(1.1) rotate(-0deg) translateX(0.2rem) translateY(0.1rem);
     }
 
     .navigace{

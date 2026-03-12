@@ -2,9 +2,9 @@
     <div class="navigace_div navigace_div_text"><a class="navigace_div_text_text" href="/">DOMŮ</a></div>
     <div class="navigace_div navigace_div_text"><a class="navigace_div_text_text" href="/navody">NÁVODY</a></div>
     <div class="navigace_div navigace_div_text"><a class="navigace_div_text_text" href="/dokumenty">DOKUMENTY</a></div></nav>
-<div class="mid"><h1>Návody</h1></div></main>
+<div class="mid"><h1>Dokumenty</h1></div></main>
 <style>
-        .logo_nav{
+    .logo_nav{
         text-decoration: none;
         transition: transform 1s ease;
         display: inline-block;
