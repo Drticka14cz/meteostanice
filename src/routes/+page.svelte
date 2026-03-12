@@ -1,6 +1,9 @@
 <div class="main">
     <div class="uvod"><div class="uvod_logo"><img src="logo_meteostanice.png" alt="logo meoteostanice" id="logo_meteostanice"></div></div>
-    <div class="mid"></div>
+    <div class="mid"><nav class="navigace"><div class="navigace_div">tady obraz</div>
+    <div class="navigace_div">tu domů</div>
+    <div class="navigace_div">návody</div>
+    <div class="navigace_div">dokumenty</div></nav></div>
 </div>
 <style>
     .uvod {
@@ -36,6 +39,25 @@
     #logo_meteostanice{
         height: 40vh;
       
+    }
+    .navigace{
+        width: 100vw;
+        height: 5vh;
+        border-top: 0.5vh black solid;
+        position: sticky;
+        top: 0;
+      
+        display: flex;
+        flex-direction: row;
+        gap: 20vw;
+        background-color: rgba(178, 178, 178, 0.3) ;
+      
+        
+    }
+    .navigace_div{
+        border: red dashed 1px;
+       
+
     }
     .mid{
         min-height: 100vh;
