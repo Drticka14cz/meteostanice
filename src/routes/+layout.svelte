@@ -1,11 +1,13 @@
 <script>
-	import favicon from '$lib/assets/favicon.svg';
+	import favicon from '/slunce.png';
+	// $lib/assets/favicon.svg
 
 	let { children } = $props();
 </script>
 
 <svelte:head>
 	<link rel="icon" href={favicon} />
+	<title>MeteostanicA</title>
 </svelte:head>
 
 
@@ -35,11 +37,11 @@
 	<div class="div_socky_basic"><a class="socky_img_a" href="https://www.instagram.com/prumyslovka_trebesin/" target="_blank"><img src="instagram.svg" alt="Školní instagram" class="socky_img">Školní instagram</a></div>
 	<div class="div_socky_basic"><a href="https://www.facebook.com/trebesin/?locale=cs_CZ" class="socky_img_a"target="_blank"><img src="facebook.svg" alt="Školní facebook" class="socky_img">školní facebook</a></div>
 	<div class="div_socky_basic"><a href="https://www.youtube.com/channel/UCeA7SCP5XHAwDmbk42RdJPg" class="socky_img_a"target="_blank"><img src="youtube.svg" alt="školní youtube" class="socky_img">školnou youtube</a></div>
-	<div class="div_socky_basic"><a href="https://svelte.dev/tutorial/kit/introducing-sveltekit" class="socky_img_a"target="_blank"><img src="linkedin.svg" alt="Školní linkedin" class="socky_img">školní linkedin</a></div>
+	<div class="div_socky_basic"><a href="https://www.linkedin.com/search/results/all/?keywords=st%C5%99edn%C3%AD%20pr%C5%AFmyslov%C3%A1%20%C5%A1kola%20a%20gymn%C3%A1zium%20na%20t%C5%99ebe%C5%A1%C3%ADn%C4%9B&origin=RICH_QUERY_SUGGESTION&heroEntityKey=urn%3Ali%3Aorganization%3A18129325&position=0" class="socky_img_a"target="_blank"><img src="linkedin.svg" alt="Školní linkedin" class="socky_img">školní linkedin</a></div>
 	<div class="div_socky_basic"><a href="https://www.instagram.com/jakub_stepanek_14/" class="socky_img_a"target="_blank"><img src="instagram.svg" alt="Kubův instagram" class="socky_img">Štěpánek instagram</a></div>
-	<div class="div_socky_basic"><a href="https://svelte.dev/tutorial/kit/introducing-sveltekit" class="socky_img_a"target="_blank"><img src="linkedin.svg" alt="Kubův linkedin" class="socky_img">Štěpánek linkedin</a></div>
+	<div class="div_socky_basic"><a href=" https://www.linkedin.com/in/jakub-%C5%A1t%C4%9Bp%C3%A1nek-74839b396/" class="socky_img_a"target="_blank"><img src="linkedin.svg" alt="Kubův linkedin" class="socky_img">Štěpánek linkedin</a></div>
 <div class="div_socky_basic"><a href="https://www.instagram.com/tomas_tarabek/" class="socky_img_a"target="_blank"><img src="instagram.svg" alt="Tomův IG" class="socky_img">Tarábek instagram</a> </div>
-<div class="div_socky_basic"><a href="https://svelte.dev/tutorial/kit/introducing-sveltekit" class="socky_img_a"target="_blank"><img src="linkedin.svg" alt="Tomův linkedin" class="socky_img">Tarábek linkedin</a></div>
+<div class="div_socky_basic"><a href="https://www.linkedin.com/in/tom%C3%A1%C5%A1-tar%C3%A1bek-a05b54398/" class="socky_img_a"target="_blank"><img src="linkedin.svg" alt="Tomův linkedin" class="socky_img">Tarábek linkedin</a></div>
 </div>
 
 	
