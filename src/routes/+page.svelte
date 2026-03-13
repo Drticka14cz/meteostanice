@@ -6,7 +6,7 @@
     <div class="navigace_div navigace_div_text"><a class="navigace_div_text_text" href="/dokumenty">DOKUMENTY</a></div></nav>
 
 
-<img src="slunce.png" alt="slunko" height="500px"></div>
+<img src="slunce.png" alt="slunko"></div>
     
 </div>
 <style>
@@ -35,9 +35,13 @@
 }
 
     .uvod_logo{
-        height: 40vh;
-        width: 40vw;
+        height: 40%;
+        width: 40%;
         /* border: red dashed 2px; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
 
     }
     .uvod_logo img{
@@ -71,7 +75,7 @@
         }
     }
     #logo_meteostanice{
-        height: 40vh;
+        height: 100%;
       
     }
     .logo_nav{
@@ -114,6 +118,7 @@
         border-radius: 0% 0% 50% 50%;
         transition: background-color 0.9s ease;
         background-color: none;
+        padding: 1.3rem;
     }
     .navigace_div_text:hover{
         background-color:  rgba(29, 113, 184, 0.8);
