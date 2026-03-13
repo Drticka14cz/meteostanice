@@ -31,7 +31,7 @@
 			</ul>
 			
 		</div>
-		<div id="patka_logo" class="patka_div"><div class="patka_loga_L"><a href="/"><img src="logo_meteostanice.png" alt="Logo meteostanice" id="logo_meteostanice"></a><a href="https://www.trebesin.cz"target="_blank"><img src="trebesin_logo.png" alt="Logo Třebešín" id="logo_trebesin"></a></div><div class="patka_loga_R"><img src="kapka.png" alt="kapka" class="patka_loga_R_paranetry"><img src="mesic.png" alt="mesic" class="patka_loga_R_paranetry"><img src="slunce.png" alt="slunce" class="patka_loga_R_paranetry"><img src="vlocka.png" alt="vlocka" class="patka_loga_R_paranetry"></div></div>
+		<div id="patka_logo" class="patka_div"><div class="patka_loga_R"><img src="kapka.png" alt="kapka" class="patka_loga_R_paranetry"><img src="mesic.png" alt="mesic" class="patka_loga_R_paranetry"><img src="slunce.png" alt="slunce" class="patka_loga_R_paranetry"><img src="vlocka.png" alt="vlocka" class="patka_loga_R_paranetry"></div><div class="patka_loga_L"><a href="/"><img src="logo_meteostanice.png" alt="Logo meteostanice" id="logo_meteostanice"></a><a href="https://www.trebesin.cz"target="_blank"><img src="trebesin_logo.png" alt="Logo Třebešín" id="logo_trebesin"></a></div></div>
 </div>
 	<div id="patka_3"><div class="patka_3" id="patka_3_loga">
 	<div class="div_socky_basic"><a class="socky_img_a" href="https://www.instagram.com/prumyslovka_trebesin/" target="_blank"><img src="instagram.svg" alt="Školní instagram" class="socky_img">Školní instagram</a></div>
@@ -65,7 +65,7 @@
   --font-mono: 'Source Code Pro', monospace;
 }
 	#telo{
-		width: 100vw;
+		width: 100%;
 		max-width: 100%;
 		min-height: 100vh;
 		/* width: 100%;
@@ -88,7 +88,8 @@
 		background-color:  #06d6a0;
 		display: block;
 		gap: 10px;
-		padding: 10px 25px 10px 25px;
+		padding: 1% 5% 1% 5%;
+		max-width: 100vw;
 		
 		
 	}
@@ -96,24 +97,29 @@
 		
 		/* border: 1px black solid; */
 		padding-top: 2%;
-		padding-left: 10%;
+		padding-left: 3%;
 		color: black;
 		font-family: var(--font-base);
 		font-size: medium;
+		height: 10%;
 		
 	}
 	#patka_logo{
-		/* border: 1px black solid; */
+		/* border: 1px aqua solid; */
 		display: flex;
 		
-		justify-content: space-between;
-		margin-left: 10rem;
+		/* justify-content: ; */
+		/* margin-left: 0.5%; */
 		margin-bottom: 0;
+		flex-wrap: wrap;
+		flex-direction: row-reverse;
+		gap: 12%;
+		
 
 
 	}
 	#logo_trebesin{
-		max-width: 20rem;
+		max-width: 20vw;
 		transition: transform 2s ease;
 	}
 	#logo_trebesin:hover{
@@ -121,7 +127,7 @@
 	}
 	#logo_meteostanice{
 		
-		max-width: 20rem;
+		max-width: 20vw;
 		transition: transform 2s ease;
 
 	}
@@ -133,26 +139,32 @@
 		/* border: red dashed 2px; */
 		display: flex;
 		flex-direction: column;
-		justify-content: space-around;
-		padding-left: 20%;
+		/* justify-content: space-around; */
+		padding-left: 0%;
+		margin-right: 0;
+		width: auto;
+		height: auto;
+		gap: 5rem;
 		
 		align-content: center;
 	}
 	.patka_loga_R{
 		/* border: blue dashed 2px; */
-		min-width: 5rem;
+		max-width: 5%;
+		width: auto;
 		display: flex;
 		flex-direction: column;
-		justify-content: center;
+		justify-content: space-around;
 		align-items: end;
 		align-content: center;
-		gap: 5em;
-		padding: 1rem;
+		
+		padding: 0.5%;
+		
 
 
 	}
 	.patka_loga_R_paranetry{
-		max-height: 2.2rem;
+		max-height: 2.5rem;
 		object-fit: contain;
 		
 		

@@ -112,7 +112,7 @@
         text-align: center;
         align-content: center;
         border-radius: 0% 0% 50% 50%;
-        transition: background-color 0.5s ease;
+        transition: background-color 0.9s ease;
         background-color: none;
     }
     .navigace_div_text:hover{
