@@ -19,7 +19,7 @@
 	<div id="patka">
 	<div id="patka_1"><a id="nadpis_patky">PROJEKT METEOSTANICE</a><div id="patka_odkazy_web"><div class="patka_odkaz_web_divy"><a href="/" class="patka_odkaz_web_divy_a">DOMŮ</a></div>
 	<div class="patka_odkaz_web_divy"><a href="/navody" class="patka_odkaz_web_divy_a">NÁVODY</a></div>
-	<div class="patka_odkaz_web_divy"><a href="/dokumenty" class="patka_odkaz_web_divy_a">DOKUMENTY</a></div></div></div>
+	<div class="patka_odkaz_web_divy"><a href="/dokumenty" class="patka_odkaz_web_divy_a">VÝVOJ</a></div></div></div>
 	<div id="patka_2"><div id="patka_text" class="patka_div">
 			<ul>
 				<li class="bez_odrazky hlavni_sekce "><span class="podtrhnuto">AUTOŘI:</span> <ul><li class="bez_odrazky">Jakub Štěpánek: stepanek123@trebesin.cz</li>
