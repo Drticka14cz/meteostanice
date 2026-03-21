@@ -78,7 +78,7 @@ meteo</div>
     }
     #logo_meteostanice{
         height: 100%;
-        margin-top: 32vh;
+        margin-top: 25vh;
       
     }
     .uvod_pointer{
@@ -146,7 +146,7 @@ filter: brightness(0) saturate(100%) invert(38%) sepia(17%) saturate(0%) hue-rot
         flex-direction: row;
         gap: 10%;
         background-color: rgba(178, 178, 178, 0.2) ;
-        padding-right: 20%;
+        padding-right: 10vw;
         font: var(--font-mono);
         font-weight: 500;
         font-size: larger;
@@ -155,8 +155,9 @@ filter: brightness(0) saturate(100%) invert(38%) sepia(17%) saturate(0%) hue-rot
     }
     .navigace_div{
         /* border: red dashed 1px; */
-        width: 50%;
-        max-width: 100%;
+        /* width: 50%;
+        max-width: 100%; */
+        flex: 1;
     }
     .navigace_div_text{
         text-align: center;
