@@ -213,7 +213,8 @@ filter: brightness(0) saturate(100%) invert(38%) sepia(17%) saturate(0%) hue-rot
 
     /* Oprava navigace */
     .navigace {
-        flex-direction: column; /* Položky pod sebou */
+        flex-wrap: wrap;
+        flex-direction: row; /* Položky pod sebou */
         height: auto; /* Navigace se natáhne podle počtu odkazů */
         padding: 1rem 0;
         padding-right: 0;

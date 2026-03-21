@@ -169,8 +169,11 @@
 	.patka_loga_R_paranetry{
 		max-height: 2.5rem;
 		object-fit: contain;
+		transition: transform 1s ease;
 		
-		
+	}
+	.patka_loga_R_paranetry:hover{
+		transform: translateX(-1.2rem);
 	}
 	.patka_div{
 		width:100% ;
@@ -306,6 +309,22 @@
 	}
 	#patka_1{
 		margin-bottom: 2rem;
+	}
+	@media( max-width:768px){
+		#patka_logo{
+		/* border: 1px aqua solid; */
+		display: flex;
+		
+		/* justify-content: ; */
+		/* margin-left: 0.5%; */
+		margin-bottom: 0;
+		flex-wrap: wrap;
+		flex-direction: column;
+		gap: 12%;
+		
+
+
+	}
 	}
 
 </style>
