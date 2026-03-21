@@ -10,6 +10,17 @@ meteo</div>
     
 </div>
 <style>
+@media (max-width: 768px) {
+    .navigace {
+        padding-right: 0; /* Zrušíme ten velký prázdný prostor */
+        gap: 2%; /* Zmenšíme mezery mezi odkazy */
+        font-size: medium; /* Zmenšíme písmo, aby se to vešlo */
+    }
+
+    .navigace_div {
+        width: auto; /* Necháme šířku podle délky slova */
+    }
+}
     .uvod {
     background-image: url("/meteo_pozadi.png");
     background-size: cover;

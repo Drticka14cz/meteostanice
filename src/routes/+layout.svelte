@@ -31,7 +31,7 @@
 			</ul>
 			
 		</div>
-		<div id="patka_logo" class="patka_div"><div class="patka_loga_R"><img src="kapka.png" alt="kapka" class="patka_loga_R_paranetry"><img src="mesic.png" alt="mesic" class="patka_loga_R_paranetry"><img src="slunce.png" alt="slunce" class="patka_loga_R_paranetry"><img src="vlocka.png" alt="vlocka" class="patka_loga_R_paranetry"></div><div class="patka_loga_L"><a href="/"><img src="logo_meteostanice.png" alt="Logo meteostanice" id="logo_meteostanice"></a><a href="https://www.trebesin.cz"target="_blank"><img src="trebesin_logo.png" alt="Logo Třebešín" id="logo_trebesin"></a></div></div>
+		<div id="patka_logo" class="patka_div"><div class="patka_loga_R"><img src="svetlo.png" alt="intenzita" class="patka_loga_R_paranetry"><img src="teplota.png" alt="teplota" class="patka_loga_R_paranetry"><img src="tlak.png" alt="tlak" class="patka_loga_R_paranetry"><img src="vlhkost.png" alt="vlhkost" class="patka_loga_R_paranetry"></div><div class="patka_loga_L"><a href="/"><img src="logo_meteostanice.png" alt="Logo meteostanice" id="logo_meteostanice"></a><a href="https://www.trebesin.cz"target="_blank"><img src="trebesin_logo.png" alt="Logo Třebešín" id="logo_trebesin"></a></div></div>
 </div>
 	<div id="patka_3"><div class="patka_3" id="patka_3_loga">
 	<div class="div_socky_basic"><a class="socky_img_a" href="https://www.instagram.com/prumyslovka_trebesin/" target="_blank"><img src="instagram.svg" alt="Školní instagram" class="socky_img">Školní instagram</a></div>
