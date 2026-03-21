@@ -82,6 +82,9 @@
 		font-size: 16px;
 		font-family: var(--font-base);
 	}
+	:global(html){
+		scroll-behavior: smooth;
+	}
 	#patka{
 		width: auto;
 		min-height: 25rem;

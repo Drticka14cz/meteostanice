@@ -1,6 +1,6 @@
 <div class="main">
-    <div class="uvod"><div class="uvod_logo"><img src="logo_meteostanice.png" alt="logo meoteostanice" id="logo_meteostanice"></div></div>
-    <div class="mid"><nav class="navigace"><div class="navigace_div"><a class="logo_nav" href="/"><img src="logo_meteostanice.png" alt="logo meteostanice navigace" id="logo_nav_id" ></a></div>
+    <div class="uvod"><div class="uvod_logo"><img src="logo_meteostanice.png" alt="logo meoteostanice" id="logo_meteostanice"></div><div class="uvod_pointer"><a href="#nav"><img src="pointer_2.svg" alt="pointer_2.svg" id="pointer"></a></div></div>
+    <div class="mid"><nav class="navigace" id="nav"><div class="navigace_div"><a class="logo_nav" href="/"><img src="logo_meteostanice.png" alt="logo meteostanice navigace" id="logo_nav_id" ></a></div>
     <div class="navigace_div navigace_div_text"><a class="navigace_div_text_text" href="/">DOMŮ</a></div>
     <div class="navigace_div navigace_div_text"><a class="navigace_div_text_text" href="/navody">NÁVODY</a></div>
     <div class="navigace_div navigace_div_text"><a class="navigace_div_text_text" href="/dokumenty">VÝVOJ</a></div></nav>
@@ -20,6 +20,8 @@ meteo</div>
     display: flex;
     flex-direction: column;
     justify-content: center;
+    gap: 10vh;
+    /* padding-top:10vh; */
     align-items: center;
     animation: posun 30s linear infinite;
     background-color: rgb(29, 113, 184);
@@ -76,15 +78,58 @@ meteo</div>
     }
     #logo_meteostanice{
         height: 100%;
+        margin-top: 32vh;
       
     }
+    .uvod_pointer{
+        /* border: red dashed 5px; */
+        width: 8vw;
+        height: 8vh;
+        padding-top: 20vh;
+        /* filter: opacity(60%); */
+        
+filter: brightness(0) saturate(100%) invert(38%) sepia(17%) saturate(0%) hue-rotate(178deg) brightness(101%) contrast(98%);
+    }
+    #pointer{
+        max-width: 100%;
+        min-width: 100%;
+        animation: pointer_ani alternate infinite 5s ease-in-out;
+        
+        
+
+    }
+    @keyframes pointer_ani{
+        0%{
+            transform: translateY(-8%);
+        }
+        15%{
+            transform: translateY(25%);
+        }
+        30%{
+            transform: translateY(-5%);
+         }
+         45%{
+            transform: translateY(25%);
+
+         }
+         60%{
+            transform: translateY(-5%);
+         }
+         75%{
+            transform: translateY(0%);
+         }
+         100%{
+            transform: translateY(0%);
+         }
+    }
+
     .logo_nav{
         text-decoration: none;
         transition: transform 1s ease;
         display: inline-block;
     }
     #logo_nav_id{
-        height: 8vh;
+        max-height:9vh;
     }
     .logo_nav:hover{
         transform: scale(1.1) rotate(-0deg) translateX(0.2rem) translateY(0.1rem);
@@ -93,7 +138,7 @@ meteo</div>
     .navigace{
         max-width: 100%;
 
-        height: 8vh;
+        height: 10%;
         border-top: 0.5vh rgb(16, 64, 102) solid;
         position: sticky;
         top: 0;
@@ -106,11 +151,12 @@ meteo</div>
         font-weight: 500;
         font-size: larger;
         
+        
     }
     .navigace_div{
         /* border: red dashed 1px; */
-
         width: 50%;
+        max-width: 100%;
     }
     .navigace_div_text{
         text-align: center;
@@ -118,7 +164,7 @@ meteo</div>
         border-radius: 0% 0% 50% 50%;
         transition: background-color 0.9s ease;
         background-color: none;
-        padding: 1.3rem;
+        padding: 2%;
     }
     .navigace_div_text:hover{
         background-color:  rgba(29, 113, 184, 0.8);
