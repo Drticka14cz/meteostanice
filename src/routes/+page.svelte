@@ -186,7 +186,16 @@ filter: brightness(0) saturate(100%) invert(38%) sepia(17%) saturate(0%) hue-rot
     }
     .mid{
         min-height: 100vh;
+        
     }
+
+
+
+
+
+
+
+    /* NOT MY WORK */
     @media (max-width: 768px) {
     /* Oprava úvodní obrazovky */
     .uvod {

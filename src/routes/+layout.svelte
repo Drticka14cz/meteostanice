@@ -310,21 +310,6 @@
 	#patka_1{
 		margin-bottom: 2rem;
 	}
-	@media( max-width:768px){
-		#patka_logo{
-		/* border: 1px aqua solid; */
-		display: flex;
-		
-		/* justify-content: ; */
-		/* margin-left: 0.5%; */
-		margin-bottom: 0;
-		flex-wrap: wrap;
-		flex-direction: column;
-		gap: 12%;
-		
-
-
-	}
-	}
+	
 
 </style>
