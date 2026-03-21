@@ -10,22 +10,12 @@ meteo</div>
     
 </div>
 <style>
-@media (max-width: 768px) {
-    .navigace {
-        padding-right: 0; /* Zrušíme ten velký prázdný prostor */
-        gap: 2%; /* Zmenšíme mezery mezi odkazy */
-        font-size: medium; /* Zmenšíme písmo, aby se to vešlo */
-    }
 
-    .navigace_div {
-        width: auto; /* Necháme šířku podle délky slova */
-    }
-}
     .uvod {
     background-image: url("/meteo_pozadi.png");
     background-size: cover;
     background-repeat: repeat-x;
-    background-position: 0 0;
+    background-position: 0 0; 
     height: 100vh;
     width: 100%;
     display: flex;
@@ -197,6 +187,53 @@ filter: brightness(0) saturate(100%) invert(38%) sepia(17%) saturate(0%) hue-rot
     .mid{
         min-height: 100vh;
     }
+    @media (max-width: 768px) {
+    /* Oprava úvodní obrazovky */
+    .uvod {
+        justify-content: space-around; /* Rozmístí prvky rovnoměrně */
+        gap: 2vh;
+    }
 
+    #logo_meteostanice {
+        margin-top: 0; /* Zrušíme ten obří skok dolů */
+        height: auto;
+        width: 70vw; /* Logo na mobilu trochu zvětšíme, aby bylo vidět */
+    }
+
+    .uvod_logo {
+        height: auto;
+        width: auto;
+    }
+
+    .uvod_pointer {
+        padding-top: 0; /* Zrušíme padding, o rozestup se stará justify-content */
+        width: 15vw; /* Šipka musí být na mobilu větší pro prst */
+        height: auto;
+    }
+
+    /* Oprava navigace */
+    .navigace {
+        flex-direction: column; /* Položky pod sebou */
+        height: auto; /* Navigace se natáhne podle počtu odkazů */
+        padding: 1rem 0;
+        padding-right: 0;
+        gap: 0.5rem;
+        align-items: center;
+    }
+
+    .navigace_div {
+        width: 100%;
+        flex: none;
+    }
+
+    .navigace_div_text {
+        padding: 0.8rem;
+        border-radius: 10px; /* Na mobilu vypadají lépe zaoblené rohy než kruhy */
+    }
+
+    #logo_nav_id {
+        max-height: 6vh; /* Menší logo v liště na mobilu */
+    }
+}
 
 </style>
