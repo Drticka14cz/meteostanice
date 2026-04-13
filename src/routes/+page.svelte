@@ -5,8 +5,13 @@
     <div class="navigace_div navigace_div_text"><a class="navigace_div_text_text" href="/navody">NÁVODY</a></div>
     <div class="navigace_div navigace_div_text"><a class="navigace_div_text_text" href="/dokumenty">VÝVOJ</a></div></nav>
 
-
-meteo</div>
+    <div class="mid_text">    <h1>Projekt meteostanice</h1>
+    Představujeme Vám doprovodný web k školnímu projektu Meteostanice na předmět hardware. Mozkem celé meteostanice je mini počítač Arduino UNO R3, na něj jsou napojeny sensory, díky kterým jsme schopni s velkou přesností měřit 4 hodnoty: teplotu, tlak, vlhkost a instenzitu světla. Pro tento projekt jsme navrhli a vyrobili unikítní krabičku, udělanou přímo na použité komponenty.
+    <div id="mid_1fotka"><div id="fotka_meteostanice_mid"><img src="logo_meteostanice.png" alt="fotka"></div><div>Takto vypadá finální vzhled meteostanice. Veškeré komponenty jsou uvnitř krabičky. Ta byla vytisknuta na 3D tiskárně ve škole. Materiál je _______ </div></div>
+    <div id="mid_2fotka"><div>Takto vypadál návrh vzhledu meteostanice. Původně bylo plánováno ________.  </div><div id="fotka_meteostanice_mid_2"><img src="logo_meteostanice.png" alt="fotka"></div></div>
+    Další informace o tvorbě našeho projektu najdete <a href="/dokumenty">zde</a>. Před použitím si prosím pročtěte návod k použití naši meteostanice, který najdete <a href="/navody">zde</a>. Jsme rádi že jste navštívili náš web a pevně věříme že se Vám náš projekt líbí. 
+</div>
+</div>
     
 </div>
 <style>
@@ -146,7 +151,7 @@ filter: brightness(0) saturate(100%) invert(38%) sepia(17%) saturate(0%) hue-rot
         display: flex;
         flex-direction: row;
         gap: 10%;
-        background-color: rgba(178, 178, 178, 0.2) ;
+        background-color: rgba(178, 178, 178, 0.72) ;
         padding-right: 10vw;
         font: var(--font-mono);
         font-weight: 500;
@@ -162,51 +167,143 @@ filter: brightness(0) saturate(100%) invert(38%) sepia(17%) saturate(0%) hue-rot
     }
     .navigace_div_text{
         text-align: center;
-        align-content: center;
+        align-content: stretch;
+        
         border-radius: 0% 0% 50% 50%;
         transition: background-color 0.9s ease;
         background-color: none;
-        padding: 2%;
+        
     }
     .navigace_div_text:hover{
         background-color:  rgba(29, 113, 184, 0.8);
         
     }
     .navigace_div_text a{
-        text-decoration: none;
+        
         transition: transform 0.5s ease;
-        display: inline-block;
-        color: inherit;
-        text-decoration: none;
+        
     }
     .navigace_div_text a:hover{
         transform: scale(1.2) translateY(-0.3rem) rotate(2deg);
         
         
     }
+    .navigace_div_text_text {
+    display: block;       
+    width: 100%;
+    height: 100%;
+    align-items: center; 
+    justify-content: center; 
+    text-decoration: none;
+    color: inherit;
+   
+    padding: 10% 0;
+    
+}
     .mid{
         min-height: 100vh;
         
     }
+    h1{
+        text-align: center;
+        margin-top: 2%;
+    }
+    .mid_text{
+        padding: 5% 15% 5% 15%;
+    }
+#mid_1fotka {
+    width: 100%;
+    /* border: 1px green solid; */ /* Můžeš smazat, až to uvidíš hotové */
+    padding: 5% 0;
+    display: flex;
+    flex-direction: row;
+    gap: 4%;             /* Mezera mezi fotkou a textem */
+    align-items: center; /* Vycentruje text vertikálně k fotce */
+}
+
+/* Levá polovina - kontejner pro fotku */
+#fotka_meteostanice_mid {
+    flex: 1;             /* Znamená: zaber 1 díl (přesně polovinu) */
+    display: flex;
+    justify-content: center;
+}
+
+#fotka_meteostanice_mid img {
+    width: 100%;         /* Fotka vyplní celou svou levou polovinu */
+    max-width: 400px;    /* Volitelné: aby nebyla na obřích monitorech moc velká */
+    height: auto;
+    border-radius: 8px;  /* Jen tip: vypadá to líp s mírným zaoblením */
+}
+
+/* Pravá polovina - kontejner pro text */
+#mid_1fotka > div:last-child { 
+    flex: 1;             /* Znamená: zaber taky 1 díl (druhou polovinu) */
+    font-size: 1.1rem;   /* Trochu zvětšíme text, ať se to dobře čte */
+    line-height: 1.6;    /* Větší řádkování pro čistší vzhled */
+}
+
+/* RESPONSIVITA: Na mobilu pod sebe */
+@media (max-width: 768px) {
+    #mid_1fotka {
+        flex-direction: column; /* Na mobilu naskládat pod sebe */
+        text-align: center;
+    }
+}
+    #mid_2fotka{
+         width: 100%;
+    /* border: 1px green solid; */ /* Můžeš smazat, až to uvidíš hotové */
+    padding: 5% 0;
+    display: flex;
+    flex-direction: row;
+    gap: 4%;             /* Mezera mezi fotkou a textem */
+    align-items: center; /* Vycentruje text vertikálně k fotce */
+    margin: 0 0 5% 0;
+
+    }
+    #fotka_meteostanice_mid_2{
+        flex: 1;             /* Znamená: zaber 1 díl (přesně polovinu) */
+    display: flex;
+    justify-content: center;
+    }
+    #fotka_meteostanice_mid_2 img {
+    width: 100%;         /* Fotka vyplní celou svou levou polovinu */
+    max-width: 400px;    /* Volitelné: aby nebyla na obřích monitorech moc velká */
+    height: auto;
+    border-radius: 8px;  /* Jen tip: vypadá to líp s mírným zaoblením */
+}
+
+/* Pravá polovina - kontejner pro text */
+#mid_2fotka > div:first-child { 
+    flex: 1;             /* Znamená: zaber taky 1 díl (druhou polovinu) */
+    font-size: 1.1rem;   /* Trochu zvětšíme text, ať se to dobře čte */
+    line-height: 1.6;    /* Větší řádkování pro čistší vzhled */
+}
+
+/* RESPONSIVITA: Na mobilu pod sebe */
+@media (max-width: 768px) {
+    #mid_2fotka {
+        flex-direction: column-reverse; /* Na mobilu naskládat pod sebe */
+        text-align: center;
+    }
+}
 
 
 
 
 
 
-
-    /* NOT MY WORK */
-    @media (max-width: 768px) {
+/* NOT MY WORK - UPDATED */
+@media (max-width: 768px) {
     /* Oprava úvodní obrazovky */
     .uvod {
-        justify-content: space-around; /* Rozmístí prvky rovnoměrně */
-        gap: 2vh;
+        justify-content: center; 
+        gap: 5vh;
     }
 
     #logo_meteostanice {
-        margin-top: 0; /* Zrušíme ten obří skok dolů */
+        margin-top: 0;
         height: auto;
-        width: 70vw; /* Logo na mobilu trochu zvětšíme, aby bylo vidět */
+        width: 60vw; /* Trochu jsme zmenšili, aby zbyl prostor */
     }
 
     .uvod_logo {
@@ -215,34 +312,48 @@ filter: brightness(0) saturate(100%) invert(38%) sepia(17%) saturate(0%) hue-rot
     }
 
     .uvod_pointer {
-        padding-top: 0; /* Zrušíme padding, o rozestup se stará justify-content */
-        width: 15vw; /* Šipka musí být na mobilu větší pro prst */
+        padding-top: 0;
+        width: 12vw;
         height: auto;
     }
 
-    /* Oprava navigace */
+    
     .navigace {
-        flex-wrap: wrap;
-        flex-direction: row; /* Položky pod sebou */
-        height: auto; /* Navigace se natáhne podle počtu odkazů */
-        padding: 1rem 0;
-        padding-right: 0;
-        gap: 0.5rem;
-        align-items: center;
+        flex-wrap: nowrap; /* Zabráníme zbytečnému skákání na 100 řádků */
+        flex-direction: row; 
+        justify-content: space-around; /* Rozprostře položky vedle sebe */
+        height: auto; 
+        padding: 10px 0; /* Minimální padding */
+        gap: 0;
     }
 
     .navigace_div {
-        width: 100%;
-        flex: none;
+        width: auto; /* Zrušeno 100%, aby nebyly pod sebou jako obří bloky */
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navigace_div_text_text {
+        padding: 10px 5px; /* Menší vnitřní prostor na mobilu */
+        font-size: 0.9rem; /* Trochu menší písmo, aby se to vešlo */
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .navigace_div_text {
-        padding: 0.8rem;
-        border-radius: 10px; /* Na mobilu vypadají lépe zaoblené rohy než kruhy */
+        border-radius: 5px; /* Méně agresivní zaoblení na mobilu */
     }
 
     #logo_nav_id {
-        max-height: 6vh; /* Menší logo v liště na mobilu */
+        max-height: 5vh; /* Menší logo v liště */
+    }
+
+    /* Oprava textových sekcí na mobilu, aby nebyly tak nalepené na kraje */
+    .mid_text {
+        padding: 5% 5%; 
     }
 }
 
