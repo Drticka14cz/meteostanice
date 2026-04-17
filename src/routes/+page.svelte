@@ -1,20 +1,36 @@
 <div class="main">
     <div class="uvod"><div class="uvod_logo"><img src="logo_meteostanice.png" alt="logo meoteostanice" id="logo_meteostanice"></div><div class="uvod_pointer"><a href="#nav"><img src="pointer_2.svg" alt="pointer_2.svg" id="pointer"></a></div></div>
     <div class="mid"><nav class="navigace" id="nav"><div class="navigace_div"><a class="logo_nav" href="/"><img src="logo_meteostanice.png" alt="logo meteostanice navigace" id="logo_nav_id" ></a></div>
-    <div class="navigace_div navigace_div_text"><a class="navigace_div_text_text" href="/">DOMŮ</a></div>
-    <div class="navigace_div navigace_div_text"><a class="navigace_div_text_text" href="/navody">NÁVODY</a></div>
+    <div class="navigace_div navigace_div_text"><a class="navigace_div_text_text " href="/">DOMŮ</a></div>
+    <div class="navigace_div navigace_div_text"><a class="navigace_div_text_text " href="/navody">NÁVODY</a></div>
     <div class="navigace_div navigace_div_text"><a class="navigace_div_text_text" href="/dokumenty">VÝVOJ</a></div></nav>
 
-    <div class="mid_text">    <h1>Projekt meteostanice</h1>
+    <div class="mid_text">    <h1 class="nadpis">Projekt meteostanice</h1>
     Představujeme Vám doprovodný web k školnímu projektu Meteostanice na předmět hardware. Mozkem celé meteostanice je mini počítač Arduino UNO R3, na něj jsou napojeny sensory, díky kterým jsme schopni s velkou přesností měřit 4 hodnoty: teplotu, tlak, vlhkost a instenzitu světla. Pro tento projekt jsme navrhli a vyrobili unikítní krabičku, udělanou přímo na použité komponenty.
     <div id="mid_1fotka"><div id="fotka_meteostanice_mid"><img src="logo_meteostanice.png" alt="fotka"></div><div>Takto vypadá finální vzhled meteostanice. Veškeré komponenty jsou uvnitř krabičky. Ta byla vytisknuta na 3D tiskárně ve škole. Materiál je _______ </div></div>
     <div id="mid_2fotka"><div>Takto vypadál návrh vzhledu meteostanice. Původně bylo plánováno ________.  </div><div id="fotka_meteostanice_mid_2"><img src="logo_meteostanice.png" alt="fotka"></div></div>
+    <div id="Galerie"><div class="galerie_nadpis "><h2 class="nadpis">Galerie</h2></div><div class="galerie_foto"> 
+        <img src="logo_meteostanice.png" alt="prvni" class="galerie_img" >
+        <img src="logo_meteostanice.png" alt="druhy" class="galerie_img">
+        <img src="logo_meteostanice.png" alt="treti" class="galerie_img">
+        <img src="logo_meteostanice.png" alt="ctvrty" class="galerie_img">
+        <img src="logo_meteostanice.png" alt="paty" class="galerie_img">
+        <img src="logo_meteostanice.png" alt="sesty" class="galerie_img"></div></div>
     Další informace o tvorbě našeho projektu najdete <a href="/dokumenty">zde</a>. Před použitím si prosím pročtěte návod k použití naši meteostanice, který najdete <a href="/navody">zde</a>. Jsme rádi že jste navštívili náš web a pevně věříme že se Vám náš projekt líbí. 
 </div>
 </div>
     
 </div>
 <style>
+ h1{
+        text-align: center;
+        margin-top: 2%;
+        
+    
+    }
+    .nadpis{
+        font-family: var(--font-mono);
+    }
 
     .uvod {
     background-image: url("/meteo_pozadi.png");
@@ -55,6 +71,7 @@
     .uvod_logo img{
         transition: transform 1s linear;
         display: inline-block;
+        
     }
     .uvod_logo img:hover{
         transform: scale(1.2) translateX(1rem) translateY(1rem) rotate(-3deg);
@@ -202,12 +219,10 @@ filter: brightness(0) saturate(100%) invert(38%) sepia(17%) saturate(0%) hue-rot
 }
     .mid{
         min-height: 100vh;
+        font-size: 1.1rem;
         
     }
-    h1{
-        text-align: center;
-        margin-top: 2%;
-    }
+   
     .mid_text{
         padding: 5% 15% 5% 15%;
     }
@@ -240,6 +255,33 @@ filter: brightness(0) saturate(100%) invert(38%) sepia(17%) saturate(0%) hue-rot
     flex: 1;             /* Znamená: zaber taky 1 díl (druhou polovinu) */
     font-size: 1.1rem;   /* Trochu zvětšíme text, ať se to dobře čte */
     line-height: 1.6;    /* Větší řádkování pro čistší vzhled */
+}
+
+#Galerie{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    border: 1px red dashed;
+    
+}
+.galerie_nadpis{
+    border: green 2px solid;
+    text-align: center;
+    margin-bottom: 5%;
+}
+.galerie_foto{
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px yellow solid;
+    justify-content: center;
+    gap: 5%;
+    
+}
+.galerie_foto img{
+    margin-bottom: 5%;
+    width: 40%;
+    height: auto;
+    display: inline-block;
 }
 
 /* RESPONSIVITA: Na mobilu pod sebe */

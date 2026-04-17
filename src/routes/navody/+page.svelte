@@ -64,5 +64,6 @@
     /* konec navigace */
     .mid{
         min-height: 100vh;
+        
     }
 </style>

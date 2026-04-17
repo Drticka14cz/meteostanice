@@ -79,7 +79,7 @@
 		background-color: aqua;
 		padding: 0px;
 		margin: 0px;
-		font-size: 16px;
+		font-size: 1.1rem;
 		font-family: var(--font-base);
 	}
 	:global(html){
@@ -103,7 +103,7 @@
 		padding-left: 3%;
 		color: black;
 		font-family: var(--font-base);
-		font-size: medium;
+		font-size: 1rem;
 		height: 10%;
 		
 	}
