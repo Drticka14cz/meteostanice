@@ -261,18 +261,18 @@ filter: brightness(0) saturate(100%) invert(38%) sepia(17%) saturate(0%) hue-rot
     display: block;
     align-items: center;
     justify-content: center;
-    border: 1px red dashed;
+    /* border: 1px red dashed; */
     
 }
 .galerie_nadpis{
-    border: green 2px solid;
+    /* border: green 2px solid; */
     text-align: center;
     margin-bottom: 5%;
 }
 .galerie_foto{
     display: flex;
     flex-wrap: wrap;
-    border: 2px yellow solid;
+    /* border: 2px yellow solid; */
     justify-content: center;
     gap: 5%;
     
