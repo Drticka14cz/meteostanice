@@ -17,7 +17,7 @@
 	
 	<div id="stranka">{@render children()}</div>
 	<div id="patka">
-	<div id="patka_1"><a id="nadpis_patky">PROJEKT METEOSTANICE test webu</a><div id="patka_odkazy_web"><div class="patka_odkaz_web_divy"><a href="/" class="patka_odkaz_web_divy_a">DOMŮ</a></div>
+	<div id="patka_1"><a id="nadpis_patky">PROJEKT METEOSTANICE</a><div id="patka_odkazy_web"><div class="patka_odkaz_web_divy"><a href="/" class="patka_odkaz_web_divy_a">DOMŮ</a></div>
 	<div class="patka_odkaz_web_divy"><a href="/navody" class="patka_odkaz_web_divy_a">NÁVODY</a></div>
 	<div class="patka_odkaz_web_divy"><a href="/dokumenty" class="patka_odkaz_web_divy_a">VÝVOJ</a></div></div></div>
 	<div id="patka_2"><div id="patka_text" class="patka_div">
@@ -310,13 +310,13 @@
 	#patka_1{
 		margin-bottom: 2rem;
 	}
-	@media (max-width: 768px){
+	/* @media (max-width: 768px){
 		#patka{
 			display: flex;
 			flex-direction: column;
 			flex-wrap: wrap;
 		}
 	}
-	
+	 */
 
 </style>
