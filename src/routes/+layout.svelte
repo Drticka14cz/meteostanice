@@ -310,6 +310,12 @@
 	#patka_1{
 		margin-bottom: 2rem;
 	}
+	@media (max-width: 768px){
+		#patka{
+			display: flex;
+			flex-direction: column;
+		}
+	}
 	
 
 </style>
