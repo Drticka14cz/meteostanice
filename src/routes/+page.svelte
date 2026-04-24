@@ -145,7 +145,7 @@ filter: brightness(0) saturate(100%) invert(38%) sepia(17%) saturate(0%) hue-rot
             transform: translateY(0%);
          }
     }
-
+/* Začátek navigace */
     .logo_nav{
         text-decoration: none;
         transition: transform 1s ease;
@@ -217,6 +217,7 @@ filter: brightness(0) saturate(100%) invert(38%) sepia(17%) saturate(0%) hue-rot
     padding: 10% 0;
     
 }
+/* KONEC NAVIGACE */
     .mid{
         min-height: 100vh;
         font-size: 1.1rem;

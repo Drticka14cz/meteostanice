@@ -153,13 +153,14 @@
 	}
 	.patka_loga_R{
 		/* border: blue dashed 2px; */
-		max-width: 5%;
+		max-width: 8%;
 		width: auto;
 		display: flex;
 		flex-direction: column;
 		justify-content: space-around;
-		align-items: end;
+		/* align-items: end; */
 		align-content: center;
+		
 		
 		padding: 0.5%;
 		
@@ -310,13 +311,44 @@
 	#patka_1{
 		margin-bottom: 2rem;
 	}
-	/* @media (max-width: 768px){
+	@media (max-width: 768px){
 		#patka{
-			display: flex;
-			flex-direction: column;
+			border: 1px solid black;
+			align-items: center;
+			justify-content: center;
+		}
+		#patka_2{
 			flex-wrap: wrap;
 		}
+		#patka_logo{
+			gap:5%;
+			display: flex;
+			flex-wrap: wrap;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			
+			padding: 10%;
+		}
+		.patka_loga_R{
+			gap: 15%;
+			
+			min-height: 100%;
+			
+			
+			
+		}
+		.patka_loga_L{
+			min-height: 100%;
+		}
+		#patka_3{
+			
+			width: 100%;
+			margin: 2% 0 5% 0;
+		}
+		
+		
 	}
-	 */
+	
 
 </style>
