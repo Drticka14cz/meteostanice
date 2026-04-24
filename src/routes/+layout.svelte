@@ -76,7 +76,7 @@
 	}
 	
 	:global(body){
-		background-color: aqua;
+		background-color: rgb(228, 228, 228);
 		padding: 0px;
 		margin: 0px;
 		font-size: 1.1rem;
@@ -345,6 +345,18 @@
 			
 			width: 100%;
 			margin: 2% 0 5% 0;
+			flex-wrap: wrap;
+			
+		}
+		#patka_3_loga{
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: center;
+			gap: 15%;
+		}
+		.div_socky_basic{
+			margin-top: 5%;
 		}
 		
 		
