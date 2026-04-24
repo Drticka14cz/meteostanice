@@ -1,6 +1,6 @@
-<main><nav class="navigace"><div class="navigace_div"><a class="logo_nav" href="/"><img src="logo_meteostanice.png" alt="logo meteostanice navigace" id="logo_nav_id" ></a></div>
-    <div class="navigace_div navigace_div_text"><a class="navigace_div_text_text" href="/">DOMŮ</a></div>
-    <div class="navigace_div navigace_div_text"><a class="navigace_div_text_text" href="/navody">NÁVODY</a></div>
+<main><nav class="navigace" id="nav"><div class="navigace_div"><a class="logo_nav" href="/"><img src="logo_meteostanice.png" alt="logo meteostanice navigace" id="logo_nav_id" ></a></div>
+    <div class="navigace_div navigace_div_text"><a class="navigace_div_text_text " href="/">DOMŮ</a></div>
+    <div class="navigace_div navigace_div_text"><a class="navigace_div_text_text " href="/navody">NÁVODY</a></div>
     <div class="navigace_div navigace_div_text"><a class="navigace_div_text_text" href="/dokumenty">VÝVOJ</a></div></nav>
 <div class="mid"><h1>Vývoj Meteostanice</h1>
 Začátek projektu na hardware započal v lednu roku 2026. Původní návrh nebyl ani blízko meteostanici. Prvnotní návrh byl gameboy, nebo nějaká malá kompaktní herní konzole. Avšak po rozhovoru s vedoucím práce, panem ing. L. Jacečkem jsme došli k tomu, že zkusíme něco jiného. Hlavním problémem by byl totiž samotný display. 
@@ -82,6 +82,42 @@ Začátek projektu na hardware započal v lednu roku 2026. Původní návrh neby
    
     padding: 10% 0;
     
+}
+@media (max-width: 768px){
+    .navigace {
+        flex-wrap: nowrap; /* Zabráníme zbytečnému skákání na 100 řádků */
+        flex-direction: row; 
+        justify-content: space-around; /* Rozprostře položky vedle sebe */
+        height: auto; 
+        padding: 10px 0; /* Minimální padding */
+        gap: 0;
+    }
+
+    .navigace_div {
+        width: auto; /* Zrušeno 100%, aby nebyly pod sebou jako obří bloky */
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navigace_div_text_text {
+        padding: 10px 5px; /* Menší vnitřní prostor na mobilu */
+        font-size: 0.9rem; /* Trochu menší písmo, aby se to vešlo */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navigace_div_text {
+        border-radius: 5px; /* Méně agresivní zaoblení na mobilu */
+    }
+
+    #logo_nav_id {
+        max-height: 5vh; /* Menší logo v liště */
+    }
+
+    /* Oprava textových sekcí na mobilu, aby nebyly tak nalepené na kraje */
 }
     /* konec navigace */
     .mid{

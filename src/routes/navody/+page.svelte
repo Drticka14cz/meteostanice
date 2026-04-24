@@ -1,10 +1,10 @@
-<main><nav class="navigace"><div class="navigace_div"><a class="logo_nav" href="/"><img src="logo_meteostanice.png" alt="logo meteostanice navigace" id="logo_nav_id" ></a></div>
-    <div class="navigace_div navigace_div_text"><a class="navigace_div_text_text" href="/">DOMŮ</a></div>
-    <div class="navigace_div navigace_div_text"><a class="navigace_div_text_text" href="/navody">NÁVODY</a></div>
+<main><nav class="navigace" id="nav"><div class="navigace_div"><a class="logo_nav" href="/"><img src="logo_meteostanice.png" alt="logo meteostanice navigace" id="logo_nav_id" ></a></div>
+    <div class="navigace_div navigace_div_text"><a class="navigace_div_text_text " href="/">DOMŮ</a></div>
+    <div class="navigace_div navigace_div_text"><a class="navigace_div_text_text " href="/navody">NÁVODY</a></div>
     <div class="navigace_div navigace_div_text"><a class="navigace_div_text_text" href="/dokumenty">VÝVOJ</a></div></nav>
 <div class="mid"><h1>Návody</h1></div></main>
 <style>
-         .logo_nav{
+   .logo_nav{
         text-decoration: none;
         transition: transform 1s ease;
         display: inline-block;
@@ -75,6 +75,43 @@
     padding: 10% 0;
     
 }
+@media (max-width: 768px){
+    .navigace {
+        flex-wrap: nowrap; /* Zabráníme zbytečnému skákání na 100 řádků */
+        flex-direction: row; 
+        justify-content: space-around; /* Rozprostře položky vedle sebe */
+        height: auto; 
+        padding: 10px 0; /* Minimální padding */
+        gap: 0;
+    }
+
+    .navigace_div {
+        width: auto; /* Zrušeno 100%, aby nebyly pod sebou jako obří bloky */
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navigace_div_text_text {
+        padding: 10px 5px; /* Menší vnitřní prostor na mobilu */
+        font-size: 0.9rem; /* Trochu menší písmo, aby se to vešlo */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navigace_div_text {
+        border-radius: 5px; /* Méně agresivní zaoblení na mobilu */
+    }
+
+    #logo_nav_id {
+        max-height: 5vh; /* Menší logo v liště */
+    }
+
+    /* Oprava textových sekcí na mobilu, aby nebyly tak nalepené na kraje */
+}
+
     /* konec navigace */
     .mid{
         min-height: 100vh;
