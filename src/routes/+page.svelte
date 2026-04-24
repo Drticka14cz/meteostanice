@@ -1,5 +1,5 @@
 <div class="main">
-    <div class="uvod"><div class="uvod_logo"><img src="logo_meteostanice.png" alt="logo meoteostanice" id="logo_meteostanice"></div><div class="uvod_pointer"><a href="#nav"><img src="pointer_2.svg" alt="pointer_2.svg" id="pointer"></a></div></div>
+    <div class="uvod"><div class="uvod_logo"><img src="logo-modra.png" alt="logo meoteostanice" id="logo_meteostanice"></div><div class="uvod_pointer"><a href="#nav"><img src="pointer_2.svg" alt="pointer_2.svg" id="pointer"></a></div></div>
     <div class="mid"><nav class="navigace" id="nav"><div class="navigace_div"><a class="logo_nav" href="/"><img src="logo_meteostanice.png" alt="logo meteostanice navigace" id="logo_nav_id" ></a></div>
     <div class="navigace_div navigace_div_text"><a class="navigace_div_text_text " href="/">DOMŮ</a></div>
     <div class="navigace_div navigace_div_text"><a class="navigace_div_text_text " href="/navody">NÁVODY</a></div>
@@ -8,12 +8,12 @@
     <div class="mid_text">    <h1 class="nadpis">Projekt meteostanice</h1>
     Představujeme Vám doprovodný web k školnímu projektu Meteostanice na předmět hardware. Mozkem celé meteostanice je mini počítač Arduino UNO R3, na něj jsou napojeny sensory, díky kterým jsme schopni s velkou přesností měřit 4 hodnoty: teplotu, tlak, vlhkost a instenzitu světla. Pro tento projekt jsme navrhli a vyrobili unikítní krabičku, udělanou přímo na použité komponenty.
     <div id="mid_1fotka"><div id="fotka_meteostanice_mid"><img src="logo_meteostanice.png" alt="fotka"></div><div>Takto vypadá finální vzhled meteostanice. Veškeré komponenty jsou uvnitř krabičky. Ta byla vytisknuta na 3D tiskárně ve škole. Materiál je _______ </div></div>
-    <div id="mid_2fotka"><div>Takto vypadál návrh vzhledu meteostanice. Původně bylo plánováno ________.  </div><div id="fotka_meteostanice_mid_2"><img src="logo_meteostanice.png" alt="fotka"></div></div>
+    <div id="mid_2fotka"><div>Takto vypadál návrh vzhledu meteostanice. Původně bylo plánováno ________.  </div><div id="fotka_meteostanice_mid_2"><img src="navrh_meteostanice_1.png" alt="fotka"></div></div>
     <div id="Galerie"><div class="galerie_nadpis "><h2 class="nadpis">Galerie</h2></div><div class="galerie_foto"> 
-        <img src="logo_meteostanice.png" alt="prvni" class="galerie_img" >
-        <img src="logo_meteostanice.png" alt="druhy" class="galerie_img">
-        <img src="logo_meteostanice.png" alt="treti" class="galerie_img">
-        <img src="logo_meteostanice.png" alt="ctvrty" class="galerie_img">
+        <img src="Meteostanice_zapojeni.png" alt="prvni" class="galerie_img" id="prvni_galerie">
+        <img src="meteostanice_solidSCR_1.png" alt="druhy" class="galerie_img">
+        <img src="meteostanice_solidSCR_2.png" alt="treti" class="galerie_img">
+        <img src="Arduino_IDE.png" alt="ctvrty" class="galerie_img">
         <img src="logo_meteostanice.png" alt="paty" class="galerie_img">
         <img src="logo_meteostanice.png" alt="sesty" class="galerie_img"></div></div>
     Další informace o tvorbě našeho projektu najdete <a href="/dokumenty">zde</a>. Před použitím si prosím pročtěte návod k použití naši meteostanice, který najdete <a href="/navody">zde</a>. Jsme rádi že jste navštívili náš web a pevně věříme že se Vám náš projekt líbí. 
@@ -100,7 +100,7 @@
         }
     }
     #logo_meteostanice{
-        height: 100%;
+        height: 200%;
         margin-top: 25vh;
       
     }
@@ -280,10 +280,13 @@ filter: brightness(0) saturate(100%) invert(38%) sepia(17%) saturate(0%) hue-rot
 }
 .galerie_foto img{
     margin-bottom: 5%;
-    width: 40%;
-    height: auto;
+    /* width: 40%; */
+    height: 1%;
+    max-height: 10% ;
+    max-width: 25%;
     display: inline-block;
 }
+
 
 /* RESPONSIVITA: Na mobilu pod sebe */
 @media (max-width: 768px) {
@@ -340,13 +343,13 @@ filter: brightness(0) saturate(100%) invert(38%) sepia(17%) saturate(0%) hue-rot
     /* Oprava úvodní obrazovky */
     .uvod {
         justify-content: center; 
-        gap: 5vh;
+        gap: 10vh;
     }
 
     #logo_meteostanice {
         margin-top: 0;
         height: auto;
-        width: 60vw; /* Trochu jsme zmenšili, aby zbyl prostor */
+        width: 100%; 
     }
 
     .uvod_logo {
@@ -356,7 +359,7 @@ filter: brightness(0) saturate(100%) invert(38%) sepia(17%) saturate(0%) hue-rot
 
     .uvod_pointer {
         padding-top: 0;
-        width: 12vw;
+        width: 22vw;
         height: auto;
     }
 

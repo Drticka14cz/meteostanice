@@ -1,8 +1,32 @@
+<script>
+  import { walk } from "svelte/compiler";
+
+</script>
 <main><nav class="navigace" id="nav"><div class="navigace_div"><a class="logo_nav" href="/"><img src="logo_meteostanice.png" alt="logo meteostanice navigace" id="logo_nav_id" ></a></div>
     <div class="navigace_div navigace_div_text"><a class="navigace_div_text_text " href="/">DOMŮ</a></div>
     <div class="navigace_div navigace_div_text"><a class="navigace_div_text_text " href="/navody">NÁVODY</a></div>
     <div class="navigace_div navigace_div_text"><a class="navigace_div_text_text" href="/dokumenty">VÝVOJ</a></div></nav>
-<div class="mid"><h1>Návody</h1></div></main>
+<div class="mid"><h1>Návody</h1>
+    <p>Vítejte v návodu k použití naší Meteostanice. Před použitím si přečtěte celý návod.
+    </p>
+    <p>Zde si prosím pročtěte důležité bezpečnostní a smluvní podmínky</p>
+    <ol>
+            <li>Meteostanice nesmí přijít do kontaktu s vodou! Je to elektronické zařízení a proto by se mohlo poškodit. Měření vlhkosti vzduchu tuto podmínku nemění.</li>
+            <li>Nesahejte do obvodů Meteostanice, dokud není vypojena z napájení! Jsou 2 možné typy napájení - 9V baterií a modrým kabelem externě z krabičky Meteostanice</li>
+            <li>Meteostanice není vytvořena k dlouhodobému použití ve venkovním prostředí. Zařízení by mohlo přestat fungovat z několika důvodů - déšť, blesk, přehřátí a další. </li>
+            <li>Meteostanici držte raději dál od dětí. Nachází se v ní malé součástky, které dokáží být nebezpečné.</li>
+            <li>Autoři projektu nenesou žádnou odpovědnost za škody na majetku či zdraví způsobené nesprávnou montáží, provozem nebo interpretací naměřených dat.</li>
+            <li>Meteostanice není certifikovaný měřící přístroj. Veškerá data by měla být sice měřena velmi přesně, přesto Meteostanici nepoužívejte pro rozhodování ovlivňující zdraví nebo majetek.</li>
+            <li>Jakákoli úprava čehokoli v rámci tohoto projektu (viz obsah projektu <a href="/dokumenty#obsah">zde</a>)je na vlastní riziko a nedoporučuje se.</li>
+            <li>Pokud Meteostanice nefunguje, vinnen je poslední člověk jež s Meteostanicí manipuloval. Můžete se obrátit na jednoho z autorů, či vedocího práce, avšak NEZARUČUJE SE, že Meteostanice bude opravena.</li>
+        </ol>
+
+
+
+
+
+
+</div></main>
 <style>
    .logo_nav{
         text-decoration: none;
@@ -112,9 +136,19 @@
     /* Oprava textových sekcí na mobilu, aby nebyly tak nalepené na kraje */
 }
 
+
+
     /* konec navigace */
+
+
+
     .mid{
         min-height: 100vh;
-        
+        padding: 5% 15% 5% 15%;
+    }
+    h1{
+        text-align: center;
+        font-family: var(--font-mono);
+        margin-bottom: 1rem;
     }
 </style>
