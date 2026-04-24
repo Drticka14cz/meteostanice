@@ -358,6 +358,11 @@
 		.div_socky_basic{
 			margin-top: 5%;
 		}
+		#patka_odkazy_web{
+			justify-content: center;
+			gap: 20%;
+		
+		}
 		
 		
 	}

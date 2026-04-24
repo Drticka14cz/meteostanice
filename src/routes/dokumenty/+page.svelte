@@ -144,6 +144,7 @@ Začátek projektu na hardware započal v lednu roku 2026. Původní návrh neby
     .disegn{
         height: 10rem;
         width: auto;
+        margin-top: 10%;
 
     }
     
