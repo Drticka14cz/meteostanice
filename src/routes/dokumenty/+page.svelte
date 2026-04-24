@@ -8,6 +8,11 @@ Začátek projektu na hardware započal v lednu roku 2026. Původní návrh neby
 <p class="uprostred">Jeden z prvních návhrhů vypadal takto:</p><div class="uprostred"><img src="kapka.png" alt="prvni_navrh" class=""></div>
 <p>Následně jsme se pustili do návrhu kompletního vzhledu brandu. Tomáš udělal brand manuál dle kterého jsme navrhli tento web, propagační leták i samotnou meteostanici. Hlavním prvkem je žluté slunce, bílý mrak a další grafické prvky. Vše je kombinováno do pár barev, které jsou vidět na tomto webu.</p>
 <div class="ukazka_disegnu_div"> <img src="logo_meteostanice.png" alt="logo" class="disegn"><img src="kapka.png" alt="kapka" class="disegn"><img src="teplota.png" alt="teplota" class="disegn"></div>
+<p>Následně Kuba udělal zapojení v tinkercadu a po čekání na komponenty bylo zapojení i kód otestováno fyzicky. Avšak bylo to nefunkční - některé komponenty chtěly jiný kód. Následně vše bylo fixnuto a mozek Meteostanice již fungoval.</p>
+<div class="uprostred"><img src="logo_meteostanice.png" alt="vzhled zapojení"></div>
+
+
+
 
 </div></main>
 
@@ -83,6 +88,7 @@ Začátek projektu na hardware započal v lednu roku 2026. Původní návrh neby
     padding: 10% 0;
     
 }
+
 @media (max-width: 768px){
     .navigace {
         flex-wrap: nowrap; /* Zabráníme zbytečnému skákání na 100 řádků */
