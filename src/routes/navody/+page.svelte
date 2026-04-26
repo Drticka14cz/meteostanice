@@ -9,6 +9,40 @@
 <div class="mid"><h1>Návody</h1>
     <p>Vítejte v návodu k použití naší Meteostanice. Před použitím si přečtěte celý návod.
     </p>
+
+
+    <div class="navod_template">
+    <h2>Přední strana meteostanice</h2>
+        <img src="Meteo_navod_1_text.png" alt="navod 1" class=" navod_img_temp">
+        <div class="popisky_div">
+            <ol class="popisky_div">
+                <li class="popisek">
+                    <h3 class="t1">T1</h3>
+                    <p>Toto tlačítko funguje k přepínání výpisu. Možné výpisy: teplota, tlak, vlhkost, intenzita. </p>
+                </li>
+                <li class="popisek">
+                    <h3 class="t1">T2</h3>
+                    <p >Toto tlačítko nechává uspat zařízení.</p>
+                </li>
+                <li class="popisek">
+                    <h3 id="rgb">RGB</h3>
+                    <p>Tato RGB Led ukazuje stupnici hodnot. Modrá znamená nízká hodnota, zelená je průměrná/ideální hodnota a červená je vysoká hodnota daného výpisu.</p>
+                </li>
+                <li class="popisek">
+                    <h3 id="lcd">LCD</h3>
+                    <p>Na této obrazovce se zobrazuje výpis hodnot naměřené sensory Meteostanice. Jsou 4 možné hodnoty: teplota, tlak, vlhkost, intenzita.</p>
+                </li>
+                <li class="popisek">
+                    <h3 id="fot">FOT</h3>
+                    <p>Zde se zezhora nachází otvor na fotorezistor. Jeden ze sensorů Meteostanice. Měří intenzitu osvětlení. Nezakrývat!</p>
+                </li>
+            </ol>
+             
+                
+        </div>
+        
+    
+    </div>
     <p>Zde si prosím pročtěte důležité bezpečnostní a smluvní podmínky</p>
     <ol>
             <li>Meteostanice nesmí přijít do kontaktu s vodou! Je to elektronické zařízení a proto by se mohlo poškodit. Měření vlhkosti vzduchu tuto podmínku nemění.</li>
@@ -55,6 +89,7 @@
         font: var(--font-mono);
         font-weight: 500;
         font-size: larger;
+        z-index: 100;
         
         
     }
@@ -151,4 +186,91 @@
         font-family: var(--font-mono);
         margin-bottom: 1rem;
     }
+
+    .navod_template{
+        /* border: 4px red solid; */
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 4rem;
+        margin: 5rem 0rem 5rem 0rem;
+
+    }
+    .navod_template img{
+        height: 100%;
+        width: 100%;
+        transition: transform 0.5s ease;
+        border-radius: 5%;
+    }
+    .navod_template img:hover{
+        transform: scale(1.2);
+    }
+    .navod_template h2{
+        text-align: center;
+        font-size:  clamp(1.2rem, 1.8rem, 2.2rem);
+    }
+    .popisky_div{
+        /* border: 2px green solid; */
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        gap: 1rem;
+        justify-content: center;
+    }
+    .popisky_div li{
+        list-style: none;
+    }
+    .popisek{
+        /* border: blue 2px dashed; */
+        /* width: clamp(15%,25%,35%); */
+        flex: 1 1 300px;
+        max-width: 400px;
+        padding: 2%;
+        background-color:  #009fe3;
+        display: flex;
+        flex-direction: column;
+        border-radius: 5%;
+        transition: transform 0.3s ease;
+    }
+    .popisek:hover {
+        
+    transform: translateY(-5px); 
+    transform: scale(1.05);
+}
+    .popisek h3{
+        font-family: var(--font-mono);
+        font-size: clamp(1rem, 1.5rem, 2rem);
+        text-align: center;
+        margin: 2%;
+        padding: 1rem;
+        
+        
+    }
+    .t1{
+        text-decoration: underline;
+        text-decoration-color: yellow;
+        
+    }
+    #rgb{
+        text-decoration: underline;
+        text-decoration-color: red;
+    }
+    #lcd{
+        text-decoration: underline;
+        text-decoration-color: aquamarine;
+    }
+    #fot{
+        text-decoration: underline;
+        text-decoration-color: blue;
+    }
+    .popisek p{
+        font-size: clamp(0.5rem,1rem,1.5rem);
+        background-color: rgb(228, 228, 228);
+        padding: 5%;
+        margin: 1em;
+        flex-grow: 1;
+        height: auto;
+        border-radius: 2rem;
+    }
+    
 </style>
