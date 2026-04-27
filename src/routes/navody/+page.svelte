@@ -9,8 +9,21 @@
 <div class="mid"><h1>Návody</h1>
     <p>Vítejte v návodu k použití naší Meteostanice. Před použitím si přečtěte celý návod.
     </p>
+    <p>POPIS METEOSTANICE:
+        <br>V Meteostanici se nachází 9V baterie, díky které může být umístěna kdekoli. V zadu meteostanice se nachází průduch pro čidlo měřící 3 veličiny. Čtvrtou veličinu měří fotorezistor, který se nachází v horní části Meteostanice. Pokud by se Meteostanice vybila tak zespoda se nachází otvor pro zapojení klasickým USB-A. V před Meteostanice se nachází 2 tlačítka, RGB ledka a LCD display - vše zařizuje pohodlný výpis dat.
 
-
+    </p>
+    <ul>
+        KOMPLETNÍ OBSAH METEOSTANICE:
+        <li>Arduino UNO R3</li>
+        <li>Fotorezistor</li>
+        <li><a href="https://dratek.cz/arduino-platforma/1361-bme280-modul-mereni-teploty-vlhkosti-a-barometrickeho-tlaku-precizni.html">modul meteočidla BMP280 3v1</a></li>
+        <li>LCD display</li>
+        <li>2 tlačítka</li>
+        <li>RGB LED</li>
+        <li>6 Rezistorů různých velikostí</li>
+    </ul>
+    
     <div class="navod_template">
     <h2>Přední strana meteostanice</h2>
         <img src="Meteo_navod_1_text.png" alt="navod 1" class=" navod_img_temp">
@@ -45,36 +58,36 @@
     </div>
     <div class="navod_template">
         <h2>Zadní strana Meteostanice</h2>
-            <img src="Meteo_navod_2.png" alt="navod zezadu" class="navod_img_temp">
+            <img src="Meteo_navod_2_text.png" alt="navod zezadu" class="navod_img_temp">
                 <div class="navod_template">
                     <ol class="popisky_div">
                         <li class="popisek">
-                            <h3 id="z_zlut">dwaa</h3>
-                            <p></p>
+                            <h3 id="z_zel">SEN</h3>
+                            <p>Zde se nachází hlavní sensor Meteostanice. Nezakrývat tento otvor, jinak budou zkreslená data!</p>
                         </li>
-                    </ol>
-                    <ol class="popisky_div">
+                    
                         <li class="popisek">
-                            <h3 id="z_cer">awd</h3>
-                            <p></p>
+                            <h3 id="z_cer">MON</h3>
+                            <p>Tady nevim co se nachází tome</p>
                         </li>
-                    </ol>
-                    <ol class="popisky_div">
+                    
+                    
                         <li class="popisek">
-                            <h3>awd</h3>
-                            <p></p>
+                            <h3 id="z_mod">USB</h3>
+                            <p>Zde se zespod nachází otvor pro USB. Arduino tím můžeme buď přepisovat nebo napájet.</p>
                         </li>
-                    </ol>
-                    <ol class="popisky_div">
+                    
+                    
                         <li class="popisek">
-                            <h3>awd</h3>
-                            <p></p>
+                            <h3 id="z_zlu">ARD</h3>
+                            <p>Zde se nachází hlavní mozek Meteostanice - Arduino Uno R3 Nezakrývat otvor, Meteostanice by se mohla přehřát.</p>
                         </li>
                     </ol>
                 </div>
         
     </div>
-    <p>Zde si prosím pročtěte důležité bezpečnostní a smluvní podmínky</p>
+    
+    <h2 class="podminky_nadpis">Zde si prosím pročtěte důležité bezpečnostní a smluvní podmínky</h2>
     <ol>
             <li>Meteostanice nesmí přijít do kontaktu s vodou! Je to elektronické zařízení a proto by se mohlo poškodit. Měření vlhkosti vzduchu tuto podmínku nemění.</li>
             <li>Nesahejte do obvodů Meteostanice, dokud není vypojena z napájení! Jsou 2 možné typy napájení - 9V baterií a modrým kabelem externě z krabičky Meteostanice</li>
@@ -85,6 +98,7 @@
             <li>Jakákoli úprava čehokoli v rámci tohoto projektu (viz obsah projektu <a href="/dokumenty#obsah">zde</a>)je na vlastní riziko a nedoporučuje se.</li>
             <li>Pokud Meteostanice nefunguje, vinnen je poslední člověk jež s Meteostanicí manipuloval. Můžete se obrátit na jednoho z autorů, či vedocího práce, avšak NEZARUČUJE SE, že Meteostanice bude opravena.</li>
         </ol>
+        <p>Děkujeme, že jste si prošli návod k použití Meteostanice a doufáme, že se Vám Meteostanice líbí. Pokud byste měli jakoukoli otázku, kontaktuje kohokoli z týmu. </p>
 
 
 
@@ -220,6 +234,13 @@
         font-family: var(--font-mono);
         margin-bottom: 1rem;
     }
+    h2{
+        font-size:  clamp(1.2rem, 1.8rem, 2.2rem);
+    }
+    .podminky_nadpis{
+        text-align: center;
+        font-size:  clamp(1.1rem, 1.6rem, 2.1rem);
+    }
 
     .navod_template{
         /* border: 4px red solid; */
@@ -227,7 +248,7 @@
         flex-direction: column;
         flex-wrap: wrap;
         gap: 4rem;
-        margin: 5rem 0rem 5rem 0rem;
+        margin: 2rem 0rem 2.8rem 0rem;
         justify-content: center;
 
     }
@@ -282,20 +303,20 @@
         
         
     }
-    .t1{
+    .t1, #z_zlu{
         text-decoration: underline;
         text-decoration-color: yellow;
         
     }
-    #rgb{
+    #rgb, #z_cer{
         text-decoration: underline;
         text-decoration-color: red;
     }
-    #lcd{
+    #lcd, #z_zel{
         text-decoration: underline;
         text-decoration-color: aquamarine;
     }
-    #fot{
+    #fot, #z_mod{
         text-decoration: underline;
         text-decoration-color: blue;
     }

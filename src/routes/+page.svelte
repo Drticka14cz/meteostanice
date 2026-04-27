@@ -7,7 +7,7 @@
 
     <div class="mid_text">    <h1 class="nadpis">Projekt meteostanice</h1>
     Představujeme Vám doprovodný web k školnímu projektu Meteostanice na předmět hardware. Mozkem celé meteostanice je mini počítač Arduino UNO R3, na něj jsou napojeny sensory, díky kterým jsme schopni s velkou přesností měřit 4 hodnoty: teplotu, tlak, vlhkost a instenzitu světla. Pro tento projekt jsme navrhli a vyrobili unikítní krabičku, udělanou přímo na použité komponenty.
-    <div id="mid_1fotka"><div id="fotka_meteostanice_mid"><img src="logo_meteostanice.png" alt="fotka"></div><div>Takto vypadá finální vzhled meteostanice. Veškeré komponenty jsou uvnitř krabičky. Ta byla vytisknuta na 3D tiskárně ve škole. Materiál je _______ </div></div>
+    <div id="mid_1fotka"><div id="fotka_meteostanice_mid"><img src="logo_meteostanice.png" alt="fotka"></div><div>Takto vypadá finální vzhled meteostanice. Veškeré komponenty jsou uvnitř krabičky. Ta byla vytisknuta na 3D tiskárně ve škole. Materiál je _______. V Meteostanici se nachází 9V baterie, díky které může být umístěna kdekoli. V zadu meteostanice se nachází průduch pro čidlo měřící 3 veličiny. Čtvrtou veličinu měří fotorezistor, který se nachází v horní části Meteostanice. Pokud by se Meteostanice vybila tak zespoda se nachází otvor pro zapojení klasickým USB-A.</div></div>
     <div id="mid_2fotka"><div>Takto vypadál návrh vzhledu meteostanice. Původně bylo plánováno ________.  </div><div id="fotka_meteostanice_mid_2"><img src="navrh_meteostanice_1.png" alt="fotka"></div></div>
     <div id="Galerie"><div class="galerie_nadpis "><h2 class="nadpis">Galerie</h2></div><div class="galerie_foto"> 
         <img src="Meteostanice_zapojeni.png" alt="prvni" class="galerie_img" id="prvni_galerie">
@@ -100,7 +100,7 @@
         }
     }
     #logo_meteostanice{
-        height: 200%;
+        height: 120%;
         margin-top: 25vh;
       
     }
