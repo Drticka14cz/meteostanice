@@ -43,6 +43,37 @@
         
     
     </div>
+    <div class="navod_template">
+        <h2>Zadní strana Meteostanice</h2>
+            <img src="Meteo_navod_2.png" alt="navod zezadu" class="navod_img_temp">
+                <div class="navod_template">
+                    <ol class="popisky_div">
+                        <li class="popisek">
+                            <h3 id="z_zlut">dwaa</h3>
+                            <p></p>
+                        </li>
+                    </ol>
+                    <ol class="popisky_div">
+                        <li class="popisek">
+                            <h3 id="z_cer">awd</h3>
+                            <p></p>
+                        </li>
+                    </ol>
+                    <ol class="popisky_div">
+                        <li class="popisek">
+                            <h3>awd</h3>
+                            <p></p>
+                        </li>
+                    </ol>
+                    <ol class="popisky_div">
+                        <li class="popisek">
+                            <h3>awd</h3>
+                            <p></p>
+                        </li>
+                    </ol>
+                </div>
+        
+    </div>
     <p>Zde si prosím pročtěte důležité bezpečnostní a smluvní podmínky</p>
     <ol>
             <li>Meteostanice nesmí přijít do kontaktu s vodou! Je to elektronické zařízení a proto by se mohlo poškodit. Měření vlhkosti vzduchu tuto podmínku nemění.</li>
@@ -180,6 +211,9 @@
     .mid{
         min-height: 100vh;
         padding: 5% 15% 5% 15%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
     h1{
         text-align: center;
@@ -194,6 +228,7 @@
         flex-wrap: wrap;
         gap: 4rem;
         margin: 5rem 0rem 5rem 0rem;
+        justify-content: center;
 
     }
     .navod_template img{
@@ -216,6 +251,7 @@
         flex-direction: row;
         gap: 1rem;
         justify-content: center;
+
     }
     .popisky_div li{
         list-style: none;
@@ -272,5 +308,17 @@
         height: auto;
         border-radius: 2rem;
     }
-    
+    @media (max-width: 768px){
+       .navod_template img{
+        transform: scale(1.4);
+        transition: transform 0.5s ease;
+       } 
+       .navod_template img:hover{
+        transform: scale(1.41);
+       }
+       .popisek {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+    }
 </style>
