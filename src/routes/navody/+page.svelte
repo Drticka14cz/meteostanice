@@ -10,7 +10,7 @@
     <p>Vítejte v návodu k použití naší Meteostanice. Před použitím si přečtěte celý návod.
     </p>
     <p>POPIS METEOSTANICE:
-        <br>V Meteostanici se nachází 9V baterie, díky které může být umístěna kdekoli. V zadu meteostanice se nachází průduch pro čidlo měřící 3 veličiny. Čtvrtou veličinu měří fotorezistor, který se nachází v horní části Meteostanice. Pokud by se Meteostanice vybila tak zespoda se nachází otvor pro zapojení klasickým USB-A. V před Meteostanice se nachází 2 tlačítka, RGB ledka a LCD display - vše zařizuje pohodlný výpis dat.
+        <br>V Meteostanici se nachází 9V baterie, díky které může být umístěna kdekoli. Na zadní straně meteostanice se nachází průduch pro čidlo měřící 3 veličiny. Čtvrtou veličinu měří fotorezistor, který se nachází v horní části Meteostanice. Pokud by se Meteostanice vybila tak zespoda se nachází otvor pro zapojení klasickým USB-A. V před Meteostanice se nachází 2 tlačítka, RGB ledka a LCD display - vše zařizuje pohodlný výpis dat.
 
     </p>
     <ul>
